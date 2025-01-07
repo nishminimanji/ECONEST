@@ -14,6 +14,8 @@
     .carousel-slide {
       width: 100%;
     }
+
+  
   </style>
 </head>
 <body class="bg-gray-100">
@@ -29,31 +31,33 @@
         <img src="images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
       </a>
       
-      <!-- Dropdown Menu -->
-      <div x-data="{ open: false }" class="relative">
-        <button @click="open = !open" class="flex items-center space-x-2 text-white bg-green-800 px-4 py-2 rounded-lg hover:bg-green-900">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <span>All Categories</span>
-        </button>
-        <div x-show="open" @click.away="open = false" class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg overflow-hidden">
-          <a href="#kitchen-appliances" class="block px-4 py-2 hover:bg-gray-100">Kitchen Appliances</a>
-          <a href="#bath-wares" class="block px-4 py-2 hover:bg-gray-100">Bath Wares</a>
-          <a href="#dining-appliances" class="block px-4 py-2 hover:bg-gray-100">Dining Appliances</a>
-          <a href="#living-area" class="block px-4 py-2 hover:bg-gray-100">Living Area</a>
-          <a href="#outside" class="block px-4 py-2 hover:bg-gray-100">Outside</a>
-        </div>
-      </div>
-    </div>
+     <!-- Dropdown Menu -->
+<div x-data="{ open: false }" class="relative">
+  <button @click="open = !open" class="flex items-center space-x-2 text-white bg-green-800 px-4 py-2 rounded-lg hover:bg-green-900">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <span>All Categories</span>
+  </button>
+  
+  <!-- Dropdown Menu Items -->
+  <div x-show="open" @click.away="open = false" class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg overflow-hidden z-10">
+    <a href="#kitchen-appliances" class="block px-4 py-2 hover:bg-gray-100">Kitchen Appliances</a>
+    <a href="#bath-wares" class="block px-4 py-2 hover:bg-gray-100">Bath Wares</a>
+    <a href="#dining-appliances" class="block px-4 py-2 hover:bg-gray-100">Dining Appliances</a>
+    <a href="#living-area" class="block px-4 py-2 hover:bg-gray-100">Living Area</a>
+    <a href="#outside" class="block px-4 py-2 hover:bg-gray-100">Outside</a>
+  </div>
+</div>
+
 
     <!-- Navigation Links -->
-    <nav class="space-x-6 flex items-center">
-      <a href="#" class="hover:text-yellow-300">Home</a>
-      <a href="#about" class="hover:text-yellow-300">About Us</a>
-      <a href="#brands" class="hover:text-yellow-300">Brands</a>
-      <a href="#services" class="hover:text-yellow-300">Services</a>
-      <a href="#contact" class="hover:text-yellow-300">Contact Us</a>
+    <nav class="space-x-4 flex items-center">
+      <a href="index.php" class="hover:text-yellow-300">Home</a>
+      <a href="../ECONEST/view/about.php" class="hover:text-yellow-300">About Us</a>
+      <a href="../ECONEST/view/brands.php" class="hover:text-yellow-300">Brands</a>
+      <a href="../ECONEST/view/services.php" class="hover:text-yellow-300">Services</a>
+      <a href="../ECONEST/view/brands.php" class="hover:text-yellow-300">Contact Us</a>
     </nav>
 
     <!-- Right Side - Search, Cart, Login/Sign Up -->
@@ -179,13 +183,176 @@
   </div>
 </section>
 
+<!-- Main Content -->
+<main class="container mx-auto my-8 p-8 bg-white shadow-lg rounded-lg">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Explore Our Latest Products</h2>
+
+  <!-- Image Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Product Box 1 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <a href="https://assets.wfcdn.com/im/49666917/compr-r85/2359/235993538/Martell+Extendable+Dining+Table.jpg" target="_blank">
+        <img 
+          src="https://assets.wfcdn.com/im/49666917/compr-r85/2359/235993538/Martell+Extendable+Dining+Table.jpg" 
+          alt="Martell Extendable Dining Table" 
+          class="w-full h-64 object-cover"
+        >
+      </a>
+      <div class="p-4 bg-white">
+        <h3 class="text-lg font-bold text-gray-800">Martell Extendable Table</h3>
+        <p class="text-gray-600 mt-2">Perfect for any dining space with a modern touch.</p>
+      </div>
+      <!-- Price Box -->
+      <div class="p-4 bg-gray-200 text-gray-800 font-semibold text-center rounded-b-lg">
+        Price: $299.99
+      </div>
+    </div>
+    
+    <!-- Product Box 2 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <a href="https://th.bing.com/th/id/R.c106719c65e8ae5cad75862f4ed0b5c6?rik=OTf9hP4c%2b4Fl6g&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f02%2fSamsung-UN60JS7000-60%e2%80%9d-4K-Ultra-HD-Smart-LED-TV.jpg&ehk=8nR0VL5ifeUM6dUYan10nGcoYM7DXMzJAypyShY8AJ4%3d&risl=&pid=ImgRaw&r=0" target="_blank">
+        <img 
+          src="https://th.bing.com/th/id/R.c106719c65e8ae5cad75862f4ed0b5c6?rik=OTf9hP4c%2b4Fl6g&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f02%2fSamsung-UN60JS7000-60%e2%80%9d-4K-Ultra-HD-Smart-LED-TV.jpg&ehk=8nR0VL5ifeUM6dUYan10nGcoYM7DXMzJAypyShY8AJ4%3d&risl=&pid=ImgRaw&r=0" 
+          alt="Samsung Smart LED TV" 
+          class="w-full h-64 object-cover"
+        >
+      </a>
+      <div class="p-4 bg-white">
+        <h3 class="text-lg font-bold text-gray-800">Samsung Smart LED TV</h3>
+        <p class="text-gray-600 mt-2">Experience lifelike 4K visuals with this premium TV.</p>
+      </div>
+      <!-- Price Box -->
+      <div class="p-4 bg-gray-200 text-gray-800 font-semibold text-center rounded-b-lg">
+        Price: $799.99
+      </div>
+    </div>
+
+    <!-- Product Box 3 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <a href="https://th.bing.com/th/id/OIP.nno8yO4h8u45_YjSXk0dKgHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain" target="_blank">
+        <img 
+          src="https://th.bing.com/th/id/OIP.nno8yO4h8u45_YjSXk0dKgHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain" 
+          alt="LG Smart Washer" 
+          class="w-full h-64 object-cover"
+        >
+      </a>
+      <div class="p-4 bg-white">
+        <h3 class="text-lg font-bold text-gray-800">LG Smart Washer</h3>
+        <p class="text-gray-600 mt-2">Advanced washing technology for a smarter home.</p>
+      </div>
+      <!-- Price Box -->
+      <div class="p-4 bg-gray-200 text-gray-800 font-semibold text-center rounded-b-lg">
+        Price: $499.99
+      </div>
+  </div>
+
+  </div>
+</main>
+
+<div class="max-w-10xl mx-auto p-8 bg-gradient-to-r from-yellow-300 to-green-400  shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- Feedback Carousel -->
+  <div class="bg-white rounded-lg shadow-md p-8">
+    <h3 class="text-3xl font-extrabold text-center text-green-900 mb-8">What Our Customers Say</h3>
+    <div class="carousel relative">
+      <div class="carousel-inner relative overflow-hidden w-full">
+        <div class="carousel-item w-full px-8 py-6">
+          <blockquote class="text-center text-gray-800">
+            <p class="italic">"Excellent service! I'll definitely recommend it to others!"</p>
+            <footer class="mt-4 text-sm text-gray-600">- Alex J.</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item w-full px-8 py-6">
+          <blockquote class="text-center text-gray-800">
+            <p class="italic">"Fantastic quality and great customer support!"</p>
+            <footer class="mt-4 text-sm text-gray-600">- Jamie K.</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item w-full px-8 py-6">
+          <blockquote class="text-center text-gray-800">
+            <p class="italic">"Quick delivery and outstanding products!"</p>
+            <footer class="mt-4 text-sm text-gray-600">- Taylor M.</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-green-600 rounded-full p-3 hover:bg-green-700">←</button>
+      <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-green-600 rounded-full p-3 hover:bg-green-700">→</button>
+    </div>
+  </div>
+
+  <!-- Why Choose Our Company -->
+  <div class="bg-white rounded-lg shadow-md p-8">
+    <h3 class="text-3xl font-extrabold text-center text-green-900 mb-8">Why Choose Us</h3>
+    <ul class="space-y-6">
+      <li class="flex items-start">
+        <span class="text-green-600 text-2xl mr-4">✔</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">High Quality</h4>
+          <p class="text-gray-600">We offer premium products with guaranteed satisfaction.</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-600 text-2xl mr-4">✔</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Customer Focus</h4>
+          <p class="text-gray-600">Our clients are our priority, ensuring a personalized experience.</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-600 text-2xl mr-4">✔</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Expert Team</h4>
+          <p class="text-gray-600">Our professionals deliver top-notch service in every interaction.</p>
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="text-green-600 text-2xl mr-4">✔</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Reliable Service</h4>
+          <p class="text-gray-600">We ensure timely deliveries and quick problem resolution.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Optional: Add custom carousel functionality -->
+<script>
+  const prevButton = document.querySelector(".left");
+  const nextButton = document.querySelector(".right");
+  const carouselItems = document.querySelectorAll(".carousel-item");
+
+  let currentIndex = 0;
+  const totalItems = carouselItems.length;
+
+  function showItem(index) {
+    carouselItems.forEach((item, i) => {
+      item.style.display = i === index ? "block" : "none";
+    });
+  }
+
+  prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    showItem(currentIndex);
+  });
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % totalItems;
+    showItem(currentIndex);
+  });
+
+  showItem(currentIndex);
+</script>
+
+
+
 <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Find Us Here -->
+    <!-- Find Us Here Section -->
     <div>
-      <div class="flex justify-center items-center mb-4">
-        <img src="images/logo1.png" alt="EcoNest Logo" class="h-12 mr-2">
-        <h3 class="text-xl font-bold">Find Us Here</h3>
+      <div class="flex justify-center items-center mb-0">
+        <img src="images/logo1.png" alt="EcoNest Logo" class="h-20 mr-2">
+        <h3 class="text-xl font-bold mb-5">Find Us Here</h3>
       </div>
       <p class="mb-4 text-sm">
         If you have any questions about our services or would like to learn more about our products, feel free to reach out to us. We're here to help and provide you with the best home appliance solutions. Don’t hesitate to contact us – we’re just a click away!
@@ -218,55 +385,108 @@
       </ul>
     </div>
 
-    <!-- Contact Us -->
+    <!-- Menu Section -->
     <div>
-      <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-      <p>Email: <a href="mailto:support@econest.com" class="hover:underline">support@econest.com</a></p>
-      <p>Phone: +94 11-456-789</p>
-      <p>Hours: Mon-Fri, 9 AM - 6 PM</p>
+      <h3 class="text-xl font-bold mb-4">Menu</h3>
+      <ul class="flex flex-col items-center space-y-4 text-center text-sm">
+        <li>
+          <a href="#home" class="hover:text-gray-300 flex items-center">
+            Home
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-gray-300 flex items-center">
+            About
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-gray-300 flex items-center">
+            Contact
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#server" class="hover:text-gray-300 flex items-center">
+            Server
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#brand" class="hover:text-gray-300 flex items-center">
+            Brand
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <!-- Location -->
+    <!-- Contact Us and Location Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Us -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>Email: <a href="mailto:support@econest.com" class="hover:underline">support@econest.com</a></p>
+        <p>Phone: +94 11-456-789</p>
+        <p>Hours: Mon-Fri, 9 AM - 6 PM</p>
+      </div>
+
+      <!-- Location -->
     <div>
       <h3 class="text-xl font-bold mb-4">Location</h3>
       <p>EcoNest Headquarters</p>
       <p>123 Green Lane</p>
       <p>Maharagama, Sri Lanka</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.749518275126!2d79.922264!3d6.8450901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2501c745e2503%3A0xffcf37db8bbf44e7!2sMaharagama!5e0!3m2!1sen!2slk!4v1699891515155!5m2!1sen!2slk"
-        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.749518275126!2d79.922264!3d6.8450901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2501c745e2503%3A0xffcf37db8bbf44e7!2sMaharagama!5e0!3m2!1sen!2slk!4v1699891515155!5m2!1sen!2slk" 
+        width="110%" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </div>
+  </div>
+
+
   
   <!-- Separator -->
-  <hr class="my-6 border-green-900" />
+<hr class="my-2 border-green-900" />
 
-  <!-- Second Footer -->
-  <div class="bg-green-700 text-white py-2">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-      <!-- Terms & Conditions, Privacy Policy -->
-      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 text-sm">
-        <a href="#" class="text-sm hover:text-gray-300">Terms & Conditions</a>
-        <a href="#" class="text-sm hover:text-gray-300">Privacy Policy</a>
-        <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
-      </div>
-
-      <!-- Payment Methods -->
-      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 text-sm">
-        <img src="https://mysoftlogic.lk/build/images/logos_1.3153c53c.png" alt="Visa" class="h-5">
-        <img src="https://mysoftlogic.lk/build/images/logos_2.52283647.png" alt="MasterCard" class="h-5">
-        <img src="https://mysoftlogic.lk/build/images/logos_4.301b650b.png" alt="PayPal" class="h-5">
-        <img src="https://mysoftlogic.lk/build/images/frimi.257e7857.png" alt="PayPal" class="h-5">
-      </div>
+<!-- Second Footer -->
+<div class="bg-green-700 text-white py-6">
+<div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <!-- Terms & Conditions, Privacy Policy, FAQ -->
+    
+    <!-- Terms & Conditions, Privacy Policy, FAQ -->
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center text-sm">
+      <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
+      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+      <a href="#" class="hover:text-gray-300">FAQ</a>
     </div>
 
-    <!-- Copyright -->
-    <div class="text-center mt-4 text-sm">
-      © 2024 EcoNest. All rights reserved.
+    <!-- Payment Methods -->
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 md:mt-0">
+      <img src="https://mysoftlogic.lk/build/images/logos_1.3153c53c.png" alt="Visa" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/logos_2.52283647.png" alt="MasterCard" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/logos_4.301b650b.png" alt="PayPal" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/frimi.257e7857.png" alt="Frimi" class="h-5">
     </div>
   </div>
-</footer>
-  </body>
-  </html>
 
+  <!-- Copyright Section -->
+  <div class="text-center mt-6 text-sm">
+    © 2024 EcoNest. All rights reserved.
+  </div>
+</div>
+</footer>
+</body>
+</html>
