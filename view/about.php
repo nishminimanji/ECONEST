@@ -43,11 +43,11 @@
         </div>
       </div>
       <nav class="space-x-4 flex items-center">
-        <a href="#" class="hover:text-yellow-300">Home</a>
-        <a href="#about" class="hover:text-yellow-300">About Us</a>
-        <a href="#brands" class="hover:text-yellow-300">Brands</a>
-        <a href="#services" class="hover:text-yellow-300">Services</a>
-        <a href="#contact" class="hover:text-yellow-300">Contact Us</a>
+        <a href="index.php" class="hover:text-yellow-300">Home</a>
+        <a href="../ECONEST/view/about.php" class="hover:text-yellow-300">About Us</a>
+        <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
+        <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
+        <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
       <div class="flex items-center space-x-4">
         <div class="relative">
@@ -73,8 +73,8 @@
   </header>
 <!-- About Us Section -->
 <section class="flex min-h-screen bg-gray-50">
-  <!-- Left side with smaller background image -->
-  <div class="w-full md:w-1/2 md:h-1/2 bg-cover bg-center min-h-screen" style="background-image: url('https://image.khaleejtimes.com/?uuid=a5eb7ac7-6a47-45e4-b568-a441b3a5ecd3&function=cropresize&type=preview&source=false&q=75&crop_w=0.93567&crop_h=0.99999&x=0.03216&y=0&width=1200&height=675.jpg');">
+  <!-- Left side with horizontal background image -->
+  <div class="w-full md:w-1/2 md:h-full bg-cover bg-center min-h-screen" style="background-image: url('https://image.khaleejtimes.com/?uuid=a5eb7ac7-6a47-45e4-b568-a441b3a5ecd3&function=cropresize&type=preview&source=false&q=75&crop_w=0.93567&crop_h=0.99999&x=0.03216&y=0&width=1200&height=675.jpg');">
     <!-- You can add any small text or logo here if needed -->
   </div>
 
@@ -111,7 +111,6 @@
     </ul>
   </div>
 </section>
-
 
 
 

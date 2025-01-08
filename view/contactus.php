@@ -43,11 +43,11 @@
         </div>
       </div>
       <nav class="space-x-4 flex items-center">
-        <a href="#" class="hover:text-yellow-300">Home</a>
-        <a href="#about" class="hover:text-yellow-300">About Us</a>
-        <a href="#brands" class="hover:text-yellow-300">Brands</a>
-        <a href="#services" class="hover:text-yellow-300">Services</a>
-        <a href="#contact" class="hover:text-yellow-300">Contact Us</a>
+        <a href="index.php" class="hover:text-yellow-300">Home</a>
+        <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
+        <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
+        <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
+        <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
       <div class="flex items-center space-x-4">
         <div class="relative">

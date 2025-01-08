@@ -43,11 +43,11 @@
         </div>
       </div>
       <nav class="space-x-4 flex items-center">
-        <a href="#" class="hover:text-yellow-300">Home</a>
-        <a href="#about" class="hover:text-yellow-300">About Us</a>
-        <a href="#brands" class="hover:text-yellow-300">Brands</a>
-        <a href="#services" class="hover:text-yellow-300">Services</a>
-        <a href="#contact" class="hover:text-yellow-300">Contact Us</a>
+        <a href="index.php" class="hover:text-yellow-300">Home</a>
+        <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
+        <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
+        <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
+        <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
       <div class="flex items-center space-x-4">
         <div class="relative">
@@ -71,3 +71,196 @@
       </div>
     </div>
   </header>
+
+
+     <!-- Hero Section with Enhanced Background Image -->
+     <section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
+        <div class="relative z-10">
+            <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="max-w-7xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-semibold text-center mb-12 text-green-600">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1: Room Arrangement -->
+            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                <h3 class="text-2xl font-semibold">Room Arrangement Services</h3>
+                <p class="mt-4 text-lg">Our expert guides assist you in arranging your space efficiently, ensuring comfort and style.</p>
+                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">Learn More</a>
+            </div>
+
+            <!-- Service 2: Product Sales -->
+            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                <h3 class="text-2xl font-semibold">Home Appliances Sales</h3>
+                <p class="mt-4 text-lg">Explore a wide range of quality home appliances designed to make your life easier and more efficient.</p>
+                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">Shop Now</a>
+            </div>
+
+            <!-- Service 3: Discounts & Offers -->
+            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                <h3 class="text-2xl font-semibold">Exclusive Offers</h3>
+                <p class="mt-4 text-lg">Enjoy incredible savings during our mid-year and end-of-year sales, plus special promotions throughout the year.</p>
+                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">View Offers</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Feature Section: Virtual Room Setup -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-green-600">Virtual Room Setup</h2>
+            <p class="mt-4 text-lg text-gray-600">Upload your room photos and visualize how our home appliances fit into your space.</p>
+            <a href="#" class="mt-8 inline-block text-white bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Try It Now</a>
+        </div>
+    </section>
+  
+<footer class="bg-green-900 text-white py-0">
+  <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Find Us Here Section -->
+    <div>
+      <div class="flex justify-center items-center mb-0">
+        <img src="images/logo1.png" alt="EcoNest Logo" class="h-20 mr-2">
+        <h3 class="text-xl font-bold mb-5">Find Us Here</h3>
+      </div>
+      <p class="mb-4 text-sm">
+        If you have any questions about our services or would like to learn more about our products, feel free to reach out to us. We're here to help and provide you with the best home appliance solutions. Don’t hesitate to contact us – we’re just a click away!
+      </p>
+      <ul class="flex justify-center space-x-6 mb-4">
+        <li>
+          <a href="https://twitter.com" target="_blank" class="hover:text-gray-300">
+            <!-- Twitter Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 4.557a9.936 9.936 0 01-2.828.775A4.932 4.932 0 0023.337 3a9.865 9.865 0 01-3.127 1.195 4.925 4.925 0 00-8.389 4.482 13.978 13.978 0 01-10.141-5.146 4.927 4.927 0 001.523 6.573A4.902 4.902 0 01.964 8.86v.061a4.926 4.926 0 003.946 4.83 4.93 4.93 0 01-2.224.084 4.927 4.927 0 004.604 3.417A9.868 9.868 0 010 19.54a13.94 13.94 0 007.548 2.213c9.055 0 14-7.496 14-13.986 0-.213-.005-.426-.014-.637A9.936 9.936 0 0024 4.557z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com" target="_blank" class="hover:text-gray-300">
+            <!-- Facebook Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.408.593 24 1.325 24H12.82v-9.294H9.692V11.28h3.128V8.736c0-3.1 1.893-4.788 4.656-4.788 1.325 0 2.464.099 2.794.144v3.24h-1.917c-1.504 0-1.796.714-1.796 1.764v2.312h3.588l-.467 3.427h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank" class="hover:text-gray-300">
+            <!-- Instagram Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16.98 1.84a6.14 6.14 0 012.17 0 2.23 2.23 0 011.57 1.57c.13.46.2.96.2 1.48s-.07 1.02-.2 1.48a2.23 2.23 0 01-1.57 1.57c-.46.13-.96.2-1.48.2s-1.02-.07-1.48-.2a2.23 2.23 0 01-1.57-1.57c-.13-.46-.2-.96-.2-1.48s.07-1.02.2-1.48a2.23 2.23 0 011.57-1.57m0-1.84C15.32 0 14.18.42 13.24 1.36 12.3 2.3 11.88 3.44 11.88 4.6s.42 2.3 1.36 3.24C14.18 8.58 15.32 9 16.48 9s2.3-.42 3.24-1.36C20.68 6.9 21.1 5.76 21.1 4.6s-.42-2.3-1.36-3.24C18.78.42 17.64 0 16.48 0z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Menu Section -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Menu</h3>
+      <ul class="flex flex-col items-center space-y-4 text-center text-sm">
+        <li>
+          <a href="#home" class="hover:text-gray-300 flex items-center">
+            Home
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-gray-300 flex items-center">
+            About
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-gray-300 flex items-center">
+            Contact
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#server" class="hover:text-gray-300 flex items-center">
+            Server
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#brand" class="hover:text-gray-300 flex items-center">
+            Brand
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path d="M5 12l5 5L20 7"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Us and Location Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Contact Us -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>Email: <a href="mailto:support@econest.com" class="hover:underline">support@econest.com</a></p>
+        <p>Phone: +94 11-456-789</p>
+        <p>Hours: Mon-Fri, 9 AM - 6 PM</p>
+      </div>
+
+      <!-- Location -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Location</h3>
+      <p>EcoNest Headquarters</p>
+      <p>123 Green Lane</p>
+      <p>Maharagama, Sri Lanka</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.749518275126!2d79.922264!3d6.8450901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2501c745e2503%3A0xffcf37db8bbf44e7!2sMaharagama!5e0!3m2!1sen!2slk!4v1699891515155!5m2!1sen!2slk" 
+        width="110%" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  </div>
+
+
+  
+  <!-- Separator -->
+<hr class="my-2 border-green-900" />
+
+<!-- Second Footer -->
+<div class="bg-green-700 text-white py-6">
+<div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <!-- Terms & Conditions, Privacy Policy, FAQ -->
+    
+    <!-- Terms & Conditions, Privacy Policy, FAQ -->
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center text-sm">
+      <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
+      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+      <a href="#" class="hover:text-gray-300">FAQ</a>
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 md:mt-0">
+      <img src="https://mysoftlogic.lk/build/images/logos_1.3153c53c.png" alt="Visa" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/logos_2.52283647.png" alt="MasterCard" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/logos_4.301b650b.png" alt="PayPal" class="h-5">
+      <img src="https://mysoftlogic.lk/build/images/frimi.257e7857.png" alt="Frimi" class="h-5">
+    </div>
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="text-center mt-6 text-sm">
+    © 2024 EcoNest. All rights reserved.
+  </div>
+</div>
+</footer>
+</body>
+</html>

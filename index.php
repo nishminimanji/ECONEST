@@ -54,10 +54,10 @@
     <!-- Navigation Links -->
     <nav class="space-x-4 flex items-center">
       <a href="index.php" class="hover:text-yellow-300">Home</a>
-      <a href="../ECONEST/view/about.php" class="hover:text-yellow-300">About Us</a>
-      <a href="../ECONEST/view/brands.php" class="hover:text-yellow-300">Brands</a>
-      <a href="../ECONEST/view/services.php" class="hover:text-yellow-300">Services</a>
-      <a href="../ECONEST/view/brands.php" class="hover:text-yellow-300">Contact Us</a>
+      <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
+      <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
+      <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
+      <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
     </nav>
 
     <!-- Right Side - Search, Cart, Login/Sign Up -->
