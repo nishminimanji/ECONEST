@@ -44,7 +44,7 @@
       </div>
       <nav class="space-x-4 flex items-center">
         <a href="index.php" class="hover:text-yellow-300">Home</a>
-        <a href="../ECONEST/view/about.php" class="hover:text-yellow-300">About Us</a>
+        <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
         <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
         <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
         <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
@@ -71,17 +71,18 @@
       </div>
     </div>
   </header>
-<!-- About Us Section -->
-<section class="flex min-h-screen bg-gray-50">
-  <!-- Left side with horizontal background image -->
-  <div class="w-full md:w-1/2 md:h-full bg-cover bg-center min-h-screen" style="background-image: url('https://image.khaleejtimes.com/?uuid=a5eb7ac7-6a47-45e4-b568-a441b3a5ecd3&function=cropresize&type=preview&source=false&q=75&crop_w=0.93567&crop_h=0.99999&x=0.03216&y=0&width=1200&height=675.jpg');">
-    <!-- You can add any small text or logo here if needed -->
+
+  <section class="min-h-screen bg-gray-50">
+  <!-- Full background image -->
+  <div class="w-full h-[50vh] bg-cover bg-center" 
+       style="background-image: url('https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2021/12/How-to-Save-Money-on-Home-Appliances-in-India.jpg'); background-repeat: no-repeat; background-position: center;">
+    <!-- Optional: Add logo or overlay text here -->
   </div>
 
-  <!-- Right side with content -->
-  <div class="w-full md:w-2/3 bg-white p-8 md:p-16 flex flex-col justify-center">
-    <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">About Us</h1>
-    <p class="text-lg text-gray-700 text-center md:text-left mb-6">Discover our story and what drives us.</p>
+  <!-- Content below the image -->
+  <div class="w-full bg-white p-8 md:p-16">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6 text-center">About Us</h1>
+    <p class="text-lg text-gray-700 text-center mb-6">Discover our story and what drives us.</p>
 
     <p class="text-lg text-gray-700 leading-relaxed mb-6">
       At <strong>EcoNest</strong>, we are passionate about providing top-quality home appliances that make your life easier and more sustainable. 
@@ -89,28 +90,69 @@
       Whether you're looking for kitchen appliances, bath wares, or outdoor equipment, EcoNest has something for everyone.
     </p>
 
-    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+    <p class="text-lg text-gray-700 leading-relaxed">
       We are committed to sustainability, offering eco-friendly products that not only enhance your home but also contribute to a healthier planet. 
       Our team works tirelessly to bring the latest innovations in home technology, ensuring that you have access to reliable, energy-efficient solutions.
     </p>
   </div>
 </section>
 
-<!-- Our Vision Section (placed below the background image) -->
-<section class="w-full bg-gray-50 py-12">
-  <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg">
-    <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Vision</h3>
-    <p class="text-lg text-gray-700 mb-6">To be the go-to provider of sustainable home appliances, empowering individuals to make environmentally conscious choices without compromising on quality or convenience.</p>
+<!-- Our Vision Section -->
+<section class="w-full bg-yellow-10 py-16">
+  <div class="max-w-6xl mx-auto">
+    <!-- Outer Box -->
+    <div class="bg-gradient-to-r from-green-300 to-green-50 p-12 rounded-lg shadow-lg">
+      <!-- Vision Section -->
+      <div class="mb-10 text-center">
+        <h3 class="text-3xl font-bold text-green-800 mb-4">Our Vision</h3>
+        <p class="text-lg text-gray-800 leading-relaxed">
+          To be the go-to provider of sustainable home appliances, empowering individuals to make environmentally conscious choices without compromising on quality or convenience.
+        </p>
+      </div>
 
-    <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Values</h3>
-    <ul class="list-disc pl-5 text-lg text-gray-700">
-      <li>Commitment to sustainability</li>
-      <li>Innovation in product design</li>
-      <li>Customer satisfaction at the forefront</li>
-      <li>Reliable, energy-efficient solutions</li>
-    </ul>
+      <!-- Values Section -->
+      <div class="bg-white p-8 md:p-12 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold text-green-700 mb-6 text-center">Our Values</h3>
+        <ul class="list-none space-y-6">
+          <li class="flex items-start">
+            <div class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-lg text-gray-700">Commitment to sustainability</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-lg text-gray-700">Innovation in product design</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-lg text-gray-700">Customer satisfaction at the forefront</p>
+          </li>
+          <li class="flex items-start">
+            <div class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-lg text-gray-700">Reliable, energy-efficient solutions</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
+
+
 
 
 
