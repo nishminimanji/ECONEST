@@ -73,16 +73,16 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Blenders</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Ricecooker</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IMG013-new-arrival.jpg" alt="Blender 1" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/SR942D-1.jpg" alt="Blender 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Mixer Grinder - 550W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 15,000</p>
+                    <p class="text-lg font-semibold">Innovex Bachelor Rice Cooker – 1L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 6,925</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -92,11 +92,11 @@
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/mxav325-1-1.jpg" alt="Blender 2" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/IRC-156-380x312.jpg" alt="Blender 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Mixer Grinder - 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 19,855</p>
+                    <p class="text-lg font-semibold">Innovex Rice Cooker – 1.5L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 6,530</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -106,11 +106,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/08/MX-AC300.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/SR-Y18-548x450-1-380x312.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Super Mixer Grinders – 1000W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 30,970</p>
+                    <p class="text-lg font-semibold">Panasonic Rice Cooker- 1.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 10,735</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -120,11 +120,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/Product1-MX-AV425-o-1.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/RICE-COOKER-IRC-186-New-Brown.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 40,575</p>
+                    <p class="text-lg font-semibold">Innovex Rice Cooker – 1.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 7,590</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -134,11 +134,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/MK-GH3.jpg" alt="Blender 5" class="w-100 h-100 object-cover">
+                    <img src="https://buyabans.com/storage/product/10415/new_pjricer5ject.png" alt="Blender 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Hand Mixer – 175W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 11 970</p>
+                    <p class="text-lg font-semibold">ABANS 2.5L (1.5KG) Rice Cooker - White</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 13,970</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -148,11 +148,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/08/MK-GB3.jpg" alt="Blender 6" class="w-100 h-100 object-cover">
+                    <img src="https://buyabans.com/storage/product/5270/new_projajju_act.png" alt="Blender 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Stand Mixer – 175W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.15,960</p>
+                    <p class="text-lg font-semibold">MITSHU 1.8L (800G) Rice Cooker</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.7,540</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -163,11 +163,11 @@
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/IHM-002B-1-380x312.jpg" alt="Blender 7" class="w-100 h-100 object-cover">
+                    <img src="https://buyabans.com/storage/product/10156/newall_oaoject.png" alt="Blender 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Stand Mixer – 300W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.13,90</p>
+                    <p class="text-lg font-semibold">MISTRAL 5.6L (3KG) Rice Cooker - Silver</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.9,990</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -177,11 +177,11 @@
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/03/IHM003.jpg" alt="Blender 8" class="w-100 h-100 object-cover">
+                    <img src="https://buyabans.com/storage/product/575/4_1_2.jpg" alt="Blender 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Hand Mixer</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.9,110</p>
+                    <p class="text-lg font-semibold">ABANS 2.5L (1.5KG) Rice Cooker</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.11,340</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -191,11 +191,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/mxav425y-1-1-380x312.jpg" alt="Blender 9" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IRC-422.jpg" alt="Blender 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.38,665</p>
+                    <p class="text-lg font-semibold">Innovex Rice Cooker – 4.2L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.17,560</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -205,11 +205,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/STEELE-MG-172-1.jpg" alt="Blender 10" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/SR972D-1.jpg" alt="Blender 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Preethi Steele</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.55,240</p>
+                    <p class="text-lg font-semibold">Panasonic Rice Cooker- 7.2L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.50,900</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -219,11 +219,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/BLUE-LEAF-MG-139-1.jpg" alt="Blender 11" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IRC-286-2.jpg" alt="Blender 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">ethi Blue Leaf – 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.38,040</p>
+                    <p class="text-lg font-semibold">Innovex Rice Cooker – 2.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.9,490</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -233,11 +233,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NITRO-MG-173-1.jpg" alt="Blender 12" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/SRG28.jpg" alt="Blender 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Preethi Nitro – 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.29,440</p>
+                    <p class="text-lg font-semibold">Panasonic Rice Cooker – 2.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.16,440</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>

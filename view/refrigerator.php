@@ -73,16 +73,16 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Blenders</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Refrigerator</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IMG013-new-arrival.jpg" alt="Blender 1" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG312DALK-1-1-1.jpg" alt="Blender 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Mixer Grinder - 550W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 15,000</p>
+                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 307 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 216,630</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -91,12 +91,12 @@
             </div>
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/mxav325-1-1.jpg" alt="Blender 2" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/RT28R-2-1.jpg" alt="Blender 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Mixer Grinder - 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 19,855</p>
+                    <p class="text-lg font-semibold">Samsung Inverter Refrigerator 253 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 156,760</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -105,12 +105,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/08/MX-AC300.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2022/07/DRDS-180-2-380x312.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Super Mixer Grinders – 1000W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 30,970</p>
+                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 79,000</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -119,12 +119,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/Product1-MX-AV425-o-1.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RT34B4542S8-web.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 40,575</p>
+                    <p class="text-lg font-semibold">Samsung No Frost Inverter Refrigerator 314L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 247,480</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -133,12 +133,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/MK-GH3.jpg" alt="Blender 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RS62R5001M9-GH_002_L-Perspective_Silver-Web.jpg" alt="Blender 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Hand Mixer – 175W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 11 970</p>
+                    <p class="text-lg font-semibold">Samsung Side by Side Inverter Refrigerator 680L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 599,225</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -147,12 +147,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/08/MK-GB3.jpg" alt="Blender 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDN240-1-1.jpg" alt="Blender 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Stand Mixer – 175W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.15,960</p>
+                    <p class="text-lg font-semibold">Innovex No Frost Refrigerator 250 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.137,500</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -162,12 +162,12 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/IHM-002B-1-380x312.jpg" alt="Blender 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IRI195-4.jpg" alt="Blender 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Stand Mixer – 300W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.13,90</p>
+                    <p class="text-lg font-semibold">Innovex Inverter Refrigerator 180L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.104,270</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -176,12 +176,12 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/03/IHM003.jpg" alt="Blender 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DRND-240-1.jpg" alt="Blender 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Hand Mixer</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.9,110</p>
+                    <p class="text-lg font-semibold">Damro No Frost Refrigerator 250 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.116,755</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -190,12 +190,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/mxav425y-1-1-380x312.jpg" alt="Blender 9" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/11/DRDD195GRS-1.jpg" alt="Blender 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.38,665</p>
+                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.84,590</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -204,12 +204,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/STEELE-MG-172-1.jpg" alt="Blender 10" class="w-100 h-100 object-cover">
+                <div class="w-full h-50">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDR195-mr.jpg" alt="Blender 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Preethi Steele</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.55,240</p>
+                    <p class="text-lg font-semibold">Innovex Direct Cool Refrigerator 180 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.95,670</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -218,12 +218,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/BLUE-LEAF-MG-139-1.jpg" alt="Blender 11" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG341SSLK-1-2.jpg" alt="Blender 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">ethi Blue Leaf – 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.38,040</p>
+                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 336 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.234,980</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -232,12 +232,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NITRO-MG-173-1.jpg" alt="Blender 12" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/DRID240DVD.jpg" alt="Blender 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Preethi Nitro – 750W</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.29,440</p>
+                    <p class="text-lg font-semibold">Damro No Frost Inverter Refrigerator 250 Ltr</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.116,340</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
