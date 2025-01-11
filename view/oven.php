@@ -73,12 +73,12 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Ovens</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Microwaves & Ovens</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/MS28H5013ASEU-WEB-3.jpg" alt="Blender 1" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/MS28H5013ASEU-WEB-3.jpg" alt="oven 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Samsung Microwave Oven – 28L</p>
@@ -92,7 +92,7 @@
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/IEOV0746-01.jpg" alt="Blender 2" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/IEOV0746-01.jpg" alt="oven 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Electric Oven – 46L</p>
@@ -106,7 +106,7 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/MS23K3513AK.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/07/MS23K3513AK.jpg" alt="oven 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Samsung Solo Microwave Oven – 23L</p>
@@ -120,7 +120,7 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NN-CT645-1.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NN-CT645-1.jpg" alt="oven 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Panasonic Convection Microwave Oven – 27L</p>
@@ -134,7 +134,7 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/IEOV05-32-1.jpg" alt="Blender 5" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/09/IEOV05-32-1.jpg" alt="oven 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Electric Oven – 32L</p>
@@ -148,7 +148,7 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NNGT342M-WEB-1.jpg" alt="Blender 6" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NNGT342M-WEB-1.jpg" alt="oven 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Panasonic Grill Microwave Oven – 23L</p>
@@ -163,7 +163,7 @@
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://thehousingforum.com/wp-content/uploads/2019/01/how-to-use-a-convection-oven.jpg" alt="Blender 7" class="w-100 h-100 object-cover">
+                    <img src="https://thehousingforum.com/wp-content/uploads/2019/01/how-to-use-a-convection-oven.jpg" alt="oven 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">MISTRAL 23L Electric Oven - Black</p>
@@ -177,7 +177,7 @@
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://th.bing.com/th/id/OIP.uuK2wL2A0MD3TDTujqEWcQHaF7?w=500&h=400&rs=1&pid=ImgDetMain" alt="Blender 8" class="w-100 h-100 object-cover">
+                    <img src="https://th.bing.com/th/id/OIP.uuK2wL2A0MD3TDTujqEWcQHaF7?w=500&h=400&rs=1&pid=ImgDetMain" alt="oven 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
                     <p class="text-lg font-semibold">Hamilton Beach Toaster Oven</p>

@@ -24,7 +24,7 @@
     <div class="container mx-auto flex justify-between items-center py-2 px-4 text-white">
       <div class="flex items-center space-x-6">
         <a href="/" class="flex items-center space-x-6">
-          <img src="logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
+          <img src="/images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
         </a>
         <div x-data="{ open: false }" class="relative">
           <button @click="open = !open" class="flex items-center space-x-2 text-white bg-green-800 px-4 py-2 rounded-lg hover:bg-green-900">
@@ -73,16 +73,17 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Refrigerators</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Dining Chairs & Tables</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG312DALK-1-1-1.jpg" alt="frig 1" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/tnt-009p-450x370.jpg" alt="dtable 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 307 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 216,630</p>
+                    <p class="text-lg font-semibold">Metal Dining Suite<p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 50,770</p>
+                    
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -92,11 +93,11 @@
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/RT28R-2-1.jpg" alt="frig 2" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/tgt-013e-450x370.jpg" alt="dtable 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Inverter Refrigerator 253 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 156,760</p>
+                    <p class="text-lg font-semibold">Metal Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 204,105</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -106,12 +107,12 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2022/07/DRDS-180-2-380x312.jpg" alt="frig 3" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/tgt-010s-dining-548x450.jpg" alt="dtable 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 79,000</p>
-                    <div class="mt-4 flex justify-between">
+                    <p class="text-lg font-semibold">Metal Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 228,435</p>
+                   <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
@@ -120,11 +121,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RT34B4542S8-web.jpg" alt="frig 4" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/tgt-014p-dining-548x450.jpg" alt="dtable 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung No Frost Inverter Refrigerator 314L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 247,480</p>
+                    <p class="text-lg font-semibold">Metal Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 115,825</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -133,12 +134,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RS62R5001M9-GH_002_L-Perspective_Silver-Web.jpg" alt="frig 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2023/11/13.png" alt="dtable 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Side by Side Inverter Refrigerator 680L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 599,225</p>
+                    <p class="text-lg font-semibold">Venis Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 138,980</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -147,12 +148,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDN240-1-1.jpg" alt="frig 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/willow-dining-suite-new03-copy.png" alt="dtable 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.137,500</p>
+                    <p class="text-lg font-semibold">Brisbane Dining Suite<br>
+                    <p class="text-xl text-red-600 mt-2">Rs. 115,825</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -162,12 +163,12 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IRI195-4.jpg" alt="frig 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/2.png" alt="dtable 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Inverter Refrigerator 180L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.104,270</p>
+                    <p class="text-lg font-semibold">Canton Dining Suite<br>
+                    <p class="text-xl text-red-600 mt-2">Rs. 113,650</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -176,12 +177,12 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DRND-240-1.jpg" alt="frig 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2020/02/11.png" alt="dtable 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,755</p>
+                    <p class="text-lg font-semibold">Pearl Dining Suite<br>
+                    <p class="text-xl text-red-600 mt-2">Rs. 74,115</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -190,12 +191,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/11/DRDD195GRS-1.jpg" alt="frig 9" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2024/03/8.png" alt="dtable 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.84,590</p>
+                    <p class="text-lg font-semibold">Nevada Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.247,625 </p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -204,12 +205,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-50">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDR195-mr.jpg" alt="frig 10" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/3.png" alt="dtable 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.95,670</p>
+                    <p class="text-lg font-semibold">Caplin Dining Suite</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.147,625 </p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -218,12 +219,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG341SSLK-1-2.jpg" alt="frig 11" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2020/02/15.png" alt="dtable 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 336 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.234,980</p>
+                    <p class="text-lg font-semibold">Wellington Dining Suite<br>
+                    <p class="text-xl text-red-600 mt-2">Rs.135,570 </p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -232,12 +233,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/DRID240DVD.jpg" alt="frig 12" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damro.lk/wp-content/uploads/2020/08/9.png" alt="dtable 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Inverter Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,340</p>
+                    <p class="text-lg font-semibold">Nevada Dining Suite<br>
+                    <p class="text-xl text-red-600 mt-2">Rs.148,670 </p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>

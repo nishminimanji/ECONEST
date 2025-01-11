@@ -73,16 +73,16 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Refrigerators</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Electric Kettles</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG312DALK-1-1-1.jpg" alt="frig 1" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IEK-0091.jpg" alt="kettle 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 307 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 216,630</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 7,450</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -92,11 +92,11 @@
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/RT28R-2-1.jpg" alt="frig 2" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IEKP-005-1-380x312.jpg" alt="kettle 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Inverter Refrigerator 253 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 156,760</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 6,175</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -106,11 +106,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2022/07/DRDS-180-2-380x312.jpg" alt="frig 3" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2024/07/IEKP-010-img-new-01.jpg" alt="kettle 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 79,000</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1.8L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 6,530</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -120,11 +120,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RT34B4542S8-web.jpg" alt="frig 4" class="w-100 h-100 object-cover">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/IEK-008.jpg" alt="kettle 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung No Frost Inverter Refrigerator 314L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 247,480</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1.5L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 4,345</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -134,11 +134,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RS62R5001M9-GH_002_L-Perspective_Silver-Web.jpg" alt="frig 5" class="w-100 h-100 object-cover">
+                    <img src="https://th.bing.com/th/id/OIP.EkCT4ZKQlWPlkysUov_MwAAAAA?w=474&h=474&rs=1&pid=ImgDetMain" alt="kettle 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Side by Side Inverter Refrigerator 680L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 599,225</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1.7L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 3,520</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -147,12 +147,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDN240-1-1.jpg" alt="frig 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-55">
+                    <img src="https://th.bing.com/th/id/OIP.OdLkgIWitjzfcm2eHzLytAHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="kettle 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.137,500</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1 L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.5,610</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -163,11 +163,11 @@
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IRI195-4.jpg" alt="frig 7" class="w-100 h-100 object-cover">
+                    <img src="https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1200Wx1200H-null?context=bWFzdGVyfGltYWdlc3wxMDMxNjl8aW1hZ2UvanBlZ3xhRE5pTDJoaE1TOHhOamMyTmpRMU16a3dOelE0Tmk4eE1qQXdWM2d4TWpBd1NGOXVkV3hzfDNmN2M1NjM2YmNmNzNkNGQyODljNTE4YTg2Njk0M2EwNDg1YTg2YzYyZTVkYjU5NDYzMzRjN2I2NTE0YWVjNTE" alt="kettle 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Inverter Refrigerator 180L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.104,270</p>
+                    <p class="text-lg font-semibold">Innovex Electric Kettles – 1.8 L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.9,890</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -177,73 +177,17 @@
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DRND-240-1.jpg" alt="frig 8" class="w-100 h-100 object-cover">
+                    <img src="https://images.thdstatic.com/productImages/148ec37b-d1c9-461d-bb6e-ac94ced5a854/svn/black-proctor-silex-electric-kettles-k4097g-64_1000.jpg" alt="kettle 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,755</p>
+                    <p class="text-lg font-semibold">Panasonic Electric Kettles – 1.7 L</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.6,500</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
                 </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/11/DRDD195GRS-1.jpg" alt="frig 9" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.84,590</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-50">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDR195-mr.jpg" alt="frig 10" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.95,670</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG341SSLK-1-2.jpg" alt="frig 11" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 336 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.234,980</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/DRID240DVD.jpg" alt="frig 12" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Inverter Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,340</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
+            </div>      
         </div>
     </div>
 

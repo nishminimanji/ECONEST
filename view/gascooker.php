@@ -24,7 +24,7 @@
     <div class="container mx-auto flex justify-between items-center py-2 px-4 text-white">
       <div class="flex items-center space-x-6">
         <a href="/" class="flex items-center space-x-6">
-          <img src="logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
+          <img src="/images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
         </a>
         <div x-data="{ open: false }" class="relative">
           <button @click="open = !open" class="flex items-center space-x-2 text-white bg-green-800 px-4 py-2 rounded-lg hover:bg-green-900">
@@ -73,16 +73,16 @@
   </header>
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Refrigerators</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Rice Cookers</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG312DALK-1-1-1.jpg" alt="frig 1" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IGS005GN-1.jpg" alt="gas 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 307 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 216,630</p>
+                    <p class="text-lg font-semibold">Innovex Glass Top Two Burner Gas Stove</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 18,515</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -91,12 +91,12 @@
             </div>
             <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/RT28R-2-1.jpg" alt="frig 2" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/IGS006-1.jpg" alt="gas 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Inverter Refrigerator 253 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 156,760</p>
+                    <p class="text-lg font-semibold">Innovex Stainless Steel Two Burner Gas Stove</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 14,420</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -105,12 +105,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2022/07/DRDS-180-2-380x312.jpg" alt="frig 3" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://th.bing.com/th?id=OIF.UU0PKEMVpQXL%2fU5VcY4XJg&rs=1&pid=ImgDetMain" alt="gas 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 79,000</p>
+                    <p class="text-lg font-semibold">Abans Double Burner Gas Cooker - Premium</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 12,990</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -119,12 +119,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RT34B4542S8-web.jpg" alt="frig 4" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://www.khind.com.my/image/cache/data/theme/products/image/product/Small%20Appliances/Kitchen%20Helpers/Gas%20Cooker/GC1090/gc1090-wh-cover_010223141223-500x500_0.jpg" alt="gas 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung No Frost Inverter Refrigerator 314L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 247,480</p>
+                    <p class="text-lg font-semibold">Abans Double Burner Gas Cooker</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 7,590</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -133,12 +133,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/12/RS62R5001M9-GH_002_L-Perspective_Silver-Web.jpg" alt="frig 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://th.bing.com/th/id/OIP.aLM3GYSTQjeOkDRhyZYjGQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain" alt="gas 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Samsung Side by Side Inverter Refrigerator 680L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 599,225</p>
+                    <p class="text-lg font-semibold">Sanford Gas Stove with 2 Burner</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 13,970</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -147,12 +147,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDN240-1-1.jpg" alt="frig 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://s.sdgcdn.com/7/2019/11/9c14ffdc699ae0a005563b1b24bd0ba8d3ea1e7f_200-1-600x600.jpg" alt="gas 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.137,500</p>
+                    <p class="text-lg font-semibold">Rinnai 2 Gas Burner RET2KRS Gas Cooker</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.10,780</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -162,12 +162,12 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/08/IRI195-4.jpg" alt="frig 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://th.bing.com/th/id/OIP.mLfYSfBKrDQbhaZeVFpcDQHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="gas 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Inverter Refrigerator 180L</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.104,270</p>
+                    <p class="text-lg font-semibold">3 Burner Gas Stove Auto Ignition</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.9,255</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -176,12 +176,12 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DRND-240-1.jpg" alt="frig 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://sowbaghya.com/cdn/shop/products/2-burner-stainless-steel-gas-stove-sowbaghya.jpg?v=1705673978" alt="gas 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,755</p>
+                    <p class="text-lg font-semibold">2 Burner Stainless Steel Gas Stove</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.11,340</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -190,12 +190,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2024/11/DRDD195GRS-1.jpg" alt="frig 9" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/IG/WV/MP/20434543/prestige-gt-02-ss-glass-top-gas-tables-1000x1000.jpg" alt="gas 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.84,590</p>
+                    <p class="text-lg font-semibold">Prestige Gas Stoves</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.13,560</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -204,12 +204,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-50">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/DDR195-mr.jpg" alt="frig 10" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://i0.wp.com/mztraders.lk/wp-content/uploads/2023/11/rinnai-gas-cooker-RV-310RI-sri-lanka.png?w=500&ssl=1" alt="gas 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Direct Cool Refrigerator 180 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.95,670</p>
+                    <p class="text-lg font-semibold">Rinnai Gas Stove 3 Burner</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.7,270</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -218,12 +218,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/06/NR-BG341SSLK-1-2.jpg" alt="frig 11" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://zenet.net/wp-content/uploads/2021/12/ZENET-7202-Gas-Burner-Two-Burners.jpg" alt="gas 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Surround Cooling Refrigerator 336 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.234,980</p>
+                    <p class="text-lg font-semibold">zenet gas burner two burners/</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.9,490</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -232,12 +232,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damroonline.lk/wp-content/uploads/2021/05/DRID240DVD.jpg" alt="frig 12" class="w-100 h-100 object-cover">
+                <div class="w-full h-48">
+                    <img src="https://subhanelectronics.pk/wp-content/uploads/2022/09/SN2.jpg" alt="gas 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Damro No Frost Inverter Refrigerator 250 Ltr</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.116,340</p>
+                    <p class="text-lg font-semibold">Nas Gas SN 2 (Steel Top)</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.12,420</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
