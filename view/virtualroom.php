@@ -42,6 +42,13 @@
     .category:hover .subcategory {
       display: block;
     }
+    body {
+      background-color:rgb(255, 255, 255); 
+    }
+    .room-placeholder {
+      color: #9ca3af; 
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -177,65 +184,69 @@
  </div>
   </header>
 
+   <!-- Main Section -->
+   <main class="container mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+    <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">Virtual Room Placement</h2>
 
-    <!-- Hero Section with Enhanced Background Image -->
-<section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
-    <div class="relative z-10">
-        <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
-        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+    <!-- Name, Email, Description Section -->
+    <div class="mb-6">
+      <label for="name" class="block text-lg font-semibold text-gray-700">Name:</label>
+      <input type="text" id="name" class="block w-full p-3 border rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name">
+
+      <label for="email" class="block mt-4 text-lg font-semibold text-gray-700">Email Address:</label>
+      <input type="email" id="email" class="block w-full p-3 border rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+
+      <label for="description" class="block mt-4 text-lg font-semibold text-gray-700">Description:</label>
+      <textarea id="description" rows="4" class="block w-full p-3 border rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Describe your room or preferences"></textarea>
     </div>
-</section>
 
-<!-- Room Arrangement Services Section -->
-<section class="relative bg-gray-100 py-16 overflow-hidden">
-    <!-- Animated Cards -->
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        <!-- Card 1: Hire Expert Room Arrangement Guides -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[200ms]">
-            <h3 class="text-2xl font-bold text-black">Room Arrangement Guides</h3>
-            <p class="mt-4 text-lg">
-                Rent expert guides to arrange your room beautifully and efficiently.
-            </p>
-            <a href="../view/roomarrangement.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Explore Rentals</a>
-        </div>
-
-        <!-- Card 2: Virtual Room Setup & Buy Options -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[400ms]">
-            <h3 class="text-2xl font-bold text-black">Virtual Room Setup</h3>
-            <p class="mt-4 text-lg">
-                Upload your room photo and see how appliances fit virtually.
-            </p>
-            <a href="../view/virtualroom.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Shop Setups</a>
-        </div>
-
-        <!-- Card 3: Exclusive Offers -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[600ms]">
-            <h3 class="text-2xl font-bold text-black">Exclusive Offers</h3>
-            <p class="mt-4 text-lg">
-            Find exclusive deals, bundle discounts, and free items with premium purchases
-            </p>
-            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">View Offers</a>
-        </div>
+    <!-- Room Upload Section -->
+    <div class="mb-6">
+      <label for="room-upload" class="block mb-2 text-lg font-semibold text-gray-700">
+        Upload a photo of your room:
+      </label>
+      <input type="file" id="room-upload" accept="image/*" class="block w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button id="upload-button" class="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-600 shadow-md">
+        Upload Image
+      </button>
     </div>
-</section>
 
+    <!-- Room Image Container -->
+    <div id="room-container" class="relative bg-gray-200 border border-gray-300 rounded-lg h-96 flex items-center justify-center overflow-hidden mt-6">
+      <p id="placeholder" class="room-placeholder">Upload a room image to visualize appliances here</p>
+    </div>
 
-<!-- Animation Script -->
-<script>
-    // Adding the animation to make cards fall from the top
-    window.addEventListener('DOMContentLoaded', () => {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }, index * 200); // Delay increases per card
-        });
+  </main>
+
+  <script>
+    const roomUploadInput = document.getElementById('room-upload');
+    const uploadButton = document.getElementById('upload-button');
+    const roomContainer = document.getElementById('room-container');
+    const placeholder = document.getElementById('placeholder');
+
+    // Upload Room Image
+    uploadButton.addEventListener('click', () => {
+      const file = roomUploadInput.files[0];
+      if (!file) {
+        alert('Please select a file to upload.');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        const img = new Image();
+        img.src = reader.result;
+        img.classList.add('absolute', 'inset-0', 'w-full', 'h-full', 'object-cover');
+        roomContainer.innerHTML = '';
+        roomContainer.appendChild(img);
+      };
+      reader.readAsDataURL(file);
     });
-</script>
+  </script>
 
 
+
+  
 <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->

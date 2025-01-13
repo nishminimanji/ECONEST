@@ -42,6 +42,35 @@
     .category:hover .subcategory {
       display: block;
     }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+    }
+    .calendar .day {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f4f6;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .calendar .day:hover {
+      background-color: #e0e0e0;
+    }
+    .calendar .day.selected {
+      background-color: #4caf50;
+      color: white;
+    }
+    body {
+    background-image: url('https://th.bing.com/th/id/OIP.2h2htuFp5AXnNvrIajoTUgHaEa?pid=ImgDet&w=474&h=282&rs=1'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -177,65 +206,98 @@
  </div>
   </header>
 
+  <!-- Appointment Form Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
 
-    <!-- Hero Section with Enhanced Background Image -->
-<section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
-    <div class="relative z-10">
-        <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
-        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+        <h2 class="text-2xl font-semibold mb-6 text-center">Book Your Appointment</h2>
+
+        <!-- Form -->
+        <form action="#" method="POST">
+          <!-- Name -->
+          <div class="mb-4">
+            <label for="name" class="block text-lg font-medium text-gray-700">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your full name" required>
+          </div>
+
+                  <!-- Address -->
+        <div class="mb-4">
+          <label for="address" class="block text-lg font-medium text-gray-700">Address</label>
+          <input type="text" id="address" name="address" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your address" required>
+        </div>
+
+
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label for="email" class="block text-lg font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your email" required>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-4">
+            <label for="phone" class="block text-lg font-medium text-gray-700">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your phone number" required>
+          </div>
+
+          <!-- Room Type -->
+          <div class="mb-4">
+            <label for="room" class="block text-lg font-medium text-gray-700">Room Type</label>
+            <select id="room" name="room" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+              <option value="living-room">Living Room</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="dining-room">Dining Room</option>
+            </select>
+          </div>
+
+          <!-- Date Selection -->
+          <div class="mb-4">
+            <label for="date" class="block text-lg font-medium text-gray-700">Select a Date</label>
+            <div class="calendar mt-2">
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day">7</div>
+              <!-- More days... -->
+            </div>
+          </div>
+
+          <!-- Time Selection -->
+          <div class="mb-4">
+            <label for="time" class="block text-lg font-medium text-gray-700">Preferred Time</label>
+            <select id="time" name="time" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+            </select>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="mb-4">
+            <label for="notes" class="block text-lg font-medium text-gray-700">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" class="w-full mt-2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Any specific requirements or requests?"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300">Submit Appointment</button>
+          </div>
+        </form>
+      </div>
     </div>
-</section>
-
-<!-- Room Arrangement Services Section -->
-<section class="relative bg-gray-100 py-16 overflow-hidden">
-    <!-- Animated Cards -->
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        <!-- Card 1: Hire Expert Room Arrangement Guides -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[200ms]">
-            <h3 class="text-2xl font-bold text-black">Room Arrangement Guides</h3>
-            <p class="mt-4 text-lg">
-                Rent expert guides to arrange your room beautifully and efficiently.
-            </p>
-            <a href="../view/roomarrangement.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Explore Rentals</a>
-        </div>
-
-        <!-- Card 2: Virtual Room Setup & Buy Options -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[400ms]">
-            <h3 class="text-2xl font-bold text-black">Virtual Room Setup</h3>
-            <p class="mt-4 text-lg">
-                Upload your room photo and see how appliances fit virtually.
-            </p>
-            <a href="../view/virtualroom.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Shop Setups</a>
-        </div>
-
-        <!-- Card 3: Exclusive Offers -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[600ms]">
-            <h3 class="text-2xl font-bold text-black">Exclusive Offers</h3>
-            <p class="mt-4 text-lg">
-            Find exclusive deals, bundle discounts, and free items with premium purchases
-            </p>
-            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">View Offers</a>
-        </div>
-    </div>
-</section>
+  </section>
 
 
-<!-- Animation Script -->
-<script>
-    // Adding the animation to make cards fall from the top
-    window.addEventListener('DOMContentLoaded', () => {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }, index * 200); // Delay increases per card
-        });
-    });
-</script>
 
-
+  
 <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->

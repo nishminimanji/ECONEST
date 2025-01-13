@@ -176,66 +176,52 @@
   <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
  </div>
   </header>
+<!-- Hero Section: Room Arrangement -->
+<section class="bg-green-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6">Need Help with Room Arrangement?</h2>
+      <p class="text-lg text-gray-600 mb-8">Don't worry, our experts are here to help you decorate your home beautifully! Schedule a consultation with us today.</p>
 
-
-    <!-- Hero Section with Enhanced Background Image -->
-<section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
-    <div class="relative z-10">
-        <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
-        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+      <div class="space-x-4">
+        <!-- Appointment Button -->
+        
+        <a href="../view/sheduleappointment.php" class="bg-yellow-500 text-green-700 px-6 py-3 rounded-full hover:bg-yellow-400">Schedule an Appointment</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Room Arrangement Services Section -->
-<section class="relative bg-gray-100 py-16 overflow-hidden">
-    <!-- Animated Cards -->
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        <!-- Card 1: Hire Expert Room Arrangement Guides -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[200ms]">
-            <h3 class="text-2xl font-bold text-black">Room Arrangement Guides</h3>
-            <p class="mt-4 text-lg">
-                Rent expert guides to arrange your room beautifully and efficiently.
-            </p>
-            <a href="../view/roomarrangement.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Explore Rentals</a>
-        </div>
-
-        <!-- Card 2: Virtual Room Setup & Buy Options -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[400ms]">
-            <h3 class="text-2xl font-bold text-black">Virtual Room Setup</h3>
-            <p class="mt-4 text-lg">
-                Upload your room photo and see how appliances fit virtually.
-            </p>
-            <a href="../view/virtualroom.php" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Shop Setups</a>
-        </div>
-
-        <!-- Card 3: Exclusive Offers -->
-        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[600ms]">
-            <h3 class="text-2xl font-bold text-black">Exclusive Offers</h3>
-            <p class="mt-4 text-lg">
-            Find exclusive deals, bundle discounts, and free items with premium purchases
-            </p>
-            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">View Offers</a>
-        </div>
+  <!-- Services Section -->
+  <section class="container mx-auto py-16">
+    <div class="text-center mb-12">
+      <h3 class="text-2xl font-semibold text-gray-800">Why Choose Us?</h3>
+      <p class="text-lg text-gray-600">Our professional decorators will help create the perfect ambiance in your home.</p>
     </div>
-</section>
+    <div class="grid md:grid-cols-3 gap-12">
+    <!-- Service 1 -->
+<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+  <img src="https://img.icons8.com/ios-filled/50/000000/room.png" class="h-16 w-16 mx-auto mb-4" alt="Room Arrangement">
+  <h4 class="text-xl font-semibold text-gray-800 mb-2">Professional Designs</h4>
+  <p class="text-gray-600">We offer tailored designs that fit your unique style and preferences.</p>
+</div>
+<!-- Service 2 -->
+<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+  <img src="https://img.icons8.com/ios-filled/50/000000/paint.png" class="h-16 w-16 mx-auto mb-4" alt="Color Consultation">
+  <h4 class="text-xl font-semibold text-gray-800 mb-2">Expert Color Consultation</h4>
+  <p class="text-gray-600">Our experts will help you choose the right colors to create a harmonious space.</p>
+</div>
+<!-- Service 3 -->
+<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+  <!-- New working image link -->
+  <img src="https://static.vecteezy.com/system/resources/previews/021/191/947/non_2x/living-room-icon-style-free-vector.jpg" class="h-16 w-16 mx-auto mb-4" alt="slylish Decor">
+  <h4 class="text-xl font-semibold text-gray-800 mb-2">Modern, Stylish Decor</h4>
+  <p class="text-gray-600">We stay up to date with the latest trends to make sure your space looks amazing.</p>
+</div>
 
 
-<!-- Animation Script -->
-<script>
-    // Adding the animation to make cards fall from the top
-    window.addEventListener('DOMContentLoaded', () => {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }, index * 200); // Delay increases per card
-        });
-    });
-</script>
+    </div>
+  </section>
 
-
+  
 <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->
