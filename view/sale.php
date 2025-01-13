@@ -42,6 +42,37 @@
     .category:hover .subcategory {
       display: block;
     }
+    @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation-duration: 0.5s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
   </style>
 </head>
 <body class="bg-gray-100">
@@ -176,185 +207,104 @@
   <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
  </div>
   </header>
+ 
+  <section class="bg-gray-50 py-16">
+  <!-- Hero Section -->
+  <div class="container mx-auto px-6 text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4" id="sale-title">Christmas Sale is Here!</h1>
+    <p class="text-xl text-gray-600" id="sale-description">Exclusive offers, huge discounts, and exciting deals on home appliances. Don't miss out—shop now!</p>
+    <a href="#shop-now" class="mt-6 inline-block bg-green-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">Shop Now</a>
+  </div>
 
-  <body class="bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Fans</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Product Card -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-409Mnew-548x450.jpg" alt="fan 1" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Wall Fan<p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 36,200</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
+  <!-- Sale Banner with Background Image -->
+  <div class="bg-cover bg-center py-20 text-center" style="background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/12/07/Christmas-Green-Banner-Background-Graphics-85936494-1.jpg');" id="sale-banner">
+    <h2 class="text-3xl font-bold mb-2 text-red-600 drop-shadow-md" id="sale-banner-title">
+      Up to 50% OFF on Selected Products!
+    </h2>
+    <p class="text-lg text-white drop-shadow-sm" id="sale-banner-description">
+      Shop the best deals this Christmas—before they're gone!
+    </p>
+  </div>
+
+  <!-- Products Section -->
+  <div class="container mx-auto px-6 mt-12">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="shop-now">
+
+      <!-- Product Card 1 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn">
+        <img src="https://th.bing.com/th/id/OIP.0wBsXNBp5k3vRB-tCSqOngHaEo?w=800&h=500&rs=1&pid=ImgDetMain" alt="Smart TV" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white">Smart TV</h3>
+          <p class="text-gray-200 text-sm mb-4">55-inch 4K Smart TV with Dolby Vision and sleek design.</p>
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="text-xl font-semibold">Rs.40,000</span>
+              <span class="text-sm text-gray-300 line-through">Rs.52,000</span>
             </div>
-            <!-- Repeat Product Card for 12 items -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/ITF006-548x450.jpg" alt="fan 2" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Table Fan</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 10,670</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/06/IWF003R-548x450.jpg" alt="fan 3" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Wall Fan with Remote</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 14,400</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-56MZ2-548x450.jpg" alt="fan 4" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Ceiling Fan</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 23,575</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SIN_FAN-P-1605H-01.webp" alt="fan 5" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Singer Pedestal Fan 50W 3 Speeds</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 22,390</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SIN_FAN-DFP750T-01_zoom.webp" alt="fan 6" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Singer Industrial Pedestal Fan 30 Inch, 03 Blades</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.46,730</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-               
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/FAN-P-SF1605HR-01.webp" alt="fan 7" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Singer Pedestal Fan With Remorte, 60W, 3 Speeds </p>
-                    <p class="text-xl text-red-600 mt-2">Rs.151,725</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-              <!-- Add more products as required -->
-              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SL-SF316AR-RC-01.webp" alt="fan 8" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Sisil 55W Pedestal Fan With Remote</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.15,999</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damro.lk/wp-content/uploads/2021/06/isf017-548x450.jpg" alt="fan 9" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                <p class="text-lg font-semibold">Innovex Stand Fan</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.10,540</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-407W-548x450.jpg" alt="fan 10" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Stand Fan</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.46,420</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damro.lk/wp-content/uploads/2020/06/ISF165R-548x450.jpg" alt="fan 11" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Stand Fan with Remote</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.178,275</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/ISF008-548x450.jpg" alt="fan 12" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Stand Fan</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.12,990</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
+          </div>
         </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-200">
+        <img src="https://img.etsystatic.com/il/c9787f/739939842/il_570xN.739939842_98vi.jpg?version=0" alt="Bed" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white">Luxury Bed</h3>
+          <p class="text-gray-200 text-sm mb-4">Experience ultimate comfort and style with this king-size bed</p>
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="text-xl font-semibold">Rs.90,899</span>
+              <span class="text-sm text-gray-300 line-through">Rs.117,999</span>
+            </div>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-400">
+        <img src="https://th.bing.com/th/id/R.b7ff7da70e397c601ab5d42094b21130?rik=p6HaWfP7kLyTUQ&pid=ImgRaw&r=0" alt="Washing Machine" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white">Washing Machine</h3>
+          <p class="text-gray-200 text-sm mb-4">8kg front-load washing machine with energy-efficient features.</p>
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="text-xl font-semibold">Rs.40,499</span>
+              <span class="text-sm text-gray-300 line-through">Rs.42,000</span>
+            </div>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-600">
+        <img src="https://th.bing.com/th/id/OIP.g_0glyvoMOinuRPWnhYXHAHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain" alt="Sofa Set" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white">Sofa Set</h3>
+          <p class="text-gray-200 text-sm mb-4">5-seater sofa set with plush cushions and a modern design.</p>
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="text-xl font-semibold">Rs.215,549</span>
+              <span class="text-sm text-gray-300 line-through">Rs.229,000</span>
+            </div>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
 
 
-    <footer class="bg-green-900 text-white py-0">
+
+
+
+   
+<footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->
     <div>

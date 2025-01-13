@@ -157,7 +157,7 @@
   </div>
 
   <!-- Cart Icon with Redirection -->
-  <a href="../ECONEST/view/cart.php" class="relative flex items-center space-x-1">
+  <a href="../view/cart.php" class="relative flex items-center space-x-1">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -176,6 +176,82 @@
   <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
  </div>
   </header>
+  
+<!-- Brands Page -->
+<section class="bg-gray-50 py-12">
+  <!-- Page Header -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-800">Our Trusted Brands</h1>
+    <p class="text-gray-600 mt-4">Explore the brands we partner with to bring you the best quality products.</p>
+  </div>
+
+  <!-- Brands Grid -->
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+      <!-- Brand 1 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/singer_logo_01.png" alt="Brand 1" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Brand 2 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/panasonic_logo_01.png" alt="Brand 2" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Brand 3 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/sony_logo_01.png" alt="Brand 3" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Brand 4 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/canon_logo_01.png" alt="Brand 4" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Brand 5 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/alumex_logo_01.png" alt="Brand 5" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Brand 6 -->
+      <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/yamaha_logo_01.png" alt="Brand 6" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 7-->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://buyabans.com/storage/attribute_option/KqFALsqjP9MkldXG0UQ20iQry0oIeBlvVtczbeRh.svg" alt="Brand 7" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 8 -->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://buyabans.com/storage/attribute_option/GZIg16snc6UwTQuPakdRPwK1OukoNkl0sQgXkUAm.webp" alt="Brand 8" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 9 -->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://buyabans.com/storage/attribute_option/lvfNeTS2YONmrdMawVb4FwV28uFmNhSeereZqbTx.webp" alt="Brand 9" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 10 -->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/huawei_logo_01.png" alt="Brand 10" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 11 -->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/casio_logo_01.png" alt="Brand 11" class="mx-auto h-24 object-contain">
+      </div>
+
+       <!-- Brand 12 -->
+       <div class="brand-card bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+        <img src="https://www.singerslfiles.com/images/brands/samsung_logo_01.png" alt="Brand 12" class="mx-auto h-24 object-contain">
+      </div>
+
+      <!-- Add more brand cards as needed -->
+    </div>
+  </div>
+</section>
 
 
   <footer class="bg-green-900 text-white py-0">

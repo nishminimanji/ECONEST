@@ -157,7 +157,7 @@
   </div>
 
   <!-- Cart Icon with Redirection -->
-  <a href="../ECONEST/view/cart.php" class="relative flex items-center space-x-1">
+  <a href="../view/cart.php" class="relative flex items-center space-x-1">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -177,11 +177,6 @@
  </div>
 
   </header>
-
-
-
-
-
 
 
   <!-- Hero Section with Carousel -->
@@ -205,9 +200,7 @@
     <div class="z-10">
       <h1 class="text-5xl font-bold text-yellow-400 drop-shadow-lg">Welcome to EcoNest</h1>
       <p class="mt-4 text-lg text-green-200 drop-shadow-md">Explore the best home appliances and enhance your living experience.</p>
-      <div class="mt-6">
-        <a href="#shop" class="bg-yellow-500 px-6 py-3 rounded-lg text-lg hover:bg-yellow-400 shadow-md">Shop Now</a>
-      </div>
+      
     </div>
   </div>
 
@@ -249,7 +242,7 @@
         <div class="bg-white bg-opacity-80 p-4 rounded-lg">
           <h3 class="text-2xl font-semibold mb-4">Mid-Year Sale</h3>
           <p class="text-gray-700 mb-4">Don't miss out on our mid-year sale with amazing deals on home appliances!</p>
-          <a href="#shop" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600">Shop Mid-Year Sale</a>
+          <a href="../ECONEST/view/sale.php" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600">Shop</a>
         </div>
       </div>
 
@@ -265,7 +258,7 @@
         <div class="bg-white bg-opacity-80 p-4 rounded-lg">
           <h3 class="text-2xl font-semibold mb-4">Christmas Sale</h3>
           <p class="text-gray-700 mb-4">Get ready for the holiday season with exclusive deals on home appliances!</p>
-          <a href="#shop" class="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-600">Shop Christmas Sale</a>
+          <a href="../ECONEST/view/sale.php" class="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-600">Shop</a>
         </div>
       </div>
     </div>
@@ -281,7 +274,7 @@
     
     <!-- Product Box 1 -->
     <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <a href="https://assets.wfcdn.com/im/49666917/compr-r85/2359/235993538/Martell+Extendable+Dining+Table.jpg" target="_blank">
+      <a href="../ECONEST/view/diningtable.php" target="_blank">
         <img 
           src="https://assets.wfcdn.com/im/49666917/compr-r85/2359/235993538/Martell+Extendable+Dining+Table.jpg" 
           alt="Martell Extendable Dining Table" 
@@ -300,7 +293,7 @@
     
     <!-- Product Box 2 -->
     <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <a href="https://th.bing.com/th/id/R.c106719c65e8ae5cad75862f4ed0b5c6?rik=OTf9hP4c%2b4Fl6g&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f02%2fSamsung-UN60JS7000-60%e2%80%9d-4K-Ultra-HD-Smart-LED-TV.jpg&ehk=8nR0VL5ifeUM6dUYan10nGcoYM7DXMzJAypyShY8AJ4%3d&risl=&pid=ImgRaw&r=0" target="_blank">
+      <a href="../ECONEST/view/tv.php" target="_blank">
         <img 
           src="https://th.bing.com/th/id/R.c106719c65e8ae5cad75862f4ed0b5c6?rik=OTf9hP4c%2b4Fl6g&riu=http%3a%2f%2fs3.amazonaws.com%2fdigitaltrends-uploads-prod%2f2016%2f02%2fSamsung-UN60JS7000-60%e2%80%9d-4K-Ultra-HD-Smart-LED-TV.jpg&ehk=8nR0VL5ifeUM6dUYan10nGcoYM7DXMzJAypyShY8AJ4%3d&risl=&pid=ImgRaw&r=0" 
           alt="Samsung Smart LED TV" 
@@ -319,7 +312,7 @@
 
     <!-- Product Box 3 -->
     <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <a href="https://th.bing.com/th/id/OIP.nno8yO4h8u45_YjSXk0dKgHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain" target="_blank">
+      <a href="../ECONEST/view/refrigerator.php" target="_blank">
         <img 
           src="https://th.bing.com/th/id/OIP.nno8yO4h8u45_YjSXk0dKgHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain" 
           alt="LG Smart Washer" 

@@ -157,7 +157,7 @@
   </div>
 
   <!-- Cart Icon with Redirection -->
-  <a href="../ECONEST/view/cart.php" class="relative flex items-center space-x-1">
+  <a href="../view/cart.php" class="relative flex items-center space-x-1">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -178,53 +178,64 @@
   </header>
 
 
-     <!-- Hero Section with Enhanced Background Image -->
-     <section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
-        <div class="relative z-10">
-            <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
-            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+    <!-- Hero Section with Enhanced Background Image -->
+<section class="relative bg-cover bg-center text-white text-center py-24" style="background-image: url('https://img.freepik.com/premium-photo/hands-holding-digital-tablet-with-home-security-icons_1134-23922.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Semi-transparent overlay -->
+    <div class="relative z-10">
+        <h1 class="text-5xl font-bold leading-tight">Our Services</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Elevating your home experience with our exclusive services designed for comfort, efficiency, and style.</p>
+    </div>
+</section>
+
+<!-- Room Arrangement Services Section -->
+<section class="relative bg-gray-100 py-16 overflow-hidden">
+    <!-- Animated Cards -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <!-- Card 1: Hire Expert Room Arrangement Guides -->
+        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[200ms]">
+            <h3 class="text-2xl font-bold text-black">Room Arrangement Guides</h3>
+            <p class="mt-4 text-lg">
+                Rent expert guides to arrange your room beautifully and efficiently.
+            </p>
+            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Explore Rentals</a>
         </div>
-    </section>
 
-    <!-- Service Overview -->
-    <section class="max-w-7xl mx-auto py-16 px-4">
-        <h2 class="text-3xl font-semibold text-center mb-12 text-green-600">What We Offer</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Service 1: Room Arrangement -->
-            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
-                <h3 class="text-2xl font-semibold">Room Arrangement Services</h3>
-                <p class="mt-4 text-lg">Our expert guides assist you in arranging your space efficiently, ensuring comfort and style.</p>
-                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">Learn More</a>
-            </div>
-
-            <!-- Service 2: Product Sales -->
-            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
-                <h3 class="text-2xl font-semibold">Home Appliances Sales</h3>
-                <p class="mt-4 text-lg">Explore a wide range of quality home appliances designed to make your life easier and more efficient.</p>
-                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">Shop Now</a>
-            </div>
-
-            <!-- Service 3: Discounts & Offers -->
-            <div class="bg-gradient-to-r from-green-400 to-green-600 text-white shadow-xl rounded-2xl p-8 hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
-                <h3 class="text-2xl font-semibold">Exclusive Offers</h3>
-                <p class="mt-4 text-lg">Enjoy incredible savings during our mid-year and end-of-year sales, plus special promotions throughout the year.</p>
-                <a href="#" class="mt-6 inline-block text-white bg-green-700 hover:bg-green-800 px-6 py-2 rounded-md transition duration-300">View Offers</a>
-            </div>
-
+        <!-- Card 2: Virtual Room Setup & Buy Options -->
+        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[400ms]">
+            <h3 class="text-2xl font-bold text-black">Virtual Room Setup</h3>
+            <p class="mt-4 text-lg">
+                Upload your room photo and see how appliances fit virtually.
+            </p>
+            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">Shop Setups</a>
         </div>
-    </section>
 
-    <!-- Feature Section: Virtual Room Setup -->
-    <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-green-600">Virtual Room Setup</h2>
-            <p class="mt-4 text-lg text-gray-600">Upload your room photos and visualize how our home appliances fit into your space.</p>
-            <a href="#" class="mt-8 inline-block text-white bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">Try It Now</a>
+        <!-- Card 3: Exclusive Offers -->
+        <div class="card bg-gradient-to-r from-yellow-300 to-yellow-400 text-white shadow-xl rounded-2xl p-8 opacity-0 translate-y-[-100px] transition-all duration-500 delay-[600ms]">
+            <h3 class="text-2xl font-bold text-black">Exclusive Offers</h3>
+            <p class="mt-4 text-lg">
+            Find exclusive deals, bundle discounts, and free items with premium purchases
+            </p>
+            <a href="#" class="mt-6 inline-block bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg text-white transition duration-300">View Offers</a>
         </div>
-    </section>
- 
+    </div>
+</section>
+
+
+<!-- Animation Script -->
+<script>
+    // Adding the animation to make cards fall from the top
+    window.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 200); // Delay increases per card
+        });
+    });
+</script>
+
+
 <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->

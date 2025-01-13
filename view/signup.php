@@ -157,7 +157,7 @@
   </div>
 
   <!-- Cart Icon with Redirection -->
-  <a href="../ECONEST/view/cart.php" class="relative flex items-center space-x-1">
+  <a href="../view/cart.php" class="relative flex items-center space-x-1">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
