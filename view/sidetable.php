@@ -176,35 +176,32 @@
   <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
  </div>
   </header>
-
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Beds</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Coffee & Side Table</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <!-- Product Card-->
+            <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Emerson.jpg" alt="bed 1" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/09/KSS-025-450x370.jpg" alt="stable 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Emerson Bed
-                    (NBEM 003 / 78" x 60")<p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 142,240</p>
+                    <p class="text-lg font-semibold">Coffee Table<p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 14,159</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
                 </div>
             </div>
- <!--Repeat Product Card for 12 items -->
+            <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/california-storage-bed-1-1.jpg" alt="bed 2" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/07/MCT-016-548x450.jpg" alt="stable 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">California Storage Bed – 78″ x 60″( KBCF007 )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 107,775</p>
+                    <p class="text-lg font-semibold">Jewel Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 73,970</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -213,12 +210,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/Bed-Web-1-1.jpg" alt="bed 3" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2020/01/MCT-001-548x450.jpg" alt="stable 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Lora Bed - KBIR 02 / 78″ x 48″ ,03 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 44,400</p>
+                    <p class="text-lg font-semibold">Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 41,175</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -227,12 +224,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/beverly-bed-2-1-1.jpg" alt="bed 4" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2020/01/WCTEL-002-3-548x450.jpg" alt="stable 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Beverly Bed – KBP 019 / 75″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 61,525</p>
+                    <p class="text-lg font-semibold">Side Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 16,420</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -241,12 +238,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/00A5363_1-1.jpg" alt="bed 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/08/WCTZU-001-548x450.jpg" alt="stable 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed – BP03( Head Board + Bed Base )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 74,530</p>
+                    <p class="text-lg font-semibold">Zurich Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 50,575</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -255,12 +252,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/Ivory-Bed-1-1.jpg" alt="bed 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2020/01/KSS-010-548x450.jpg" alt="stable 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Ivory Bed – NBIV 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.336,945</p>
+                    <p class="text-lg font-semibold">Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.12,575</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -270,12 +267,12 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Brilliant-580x476-1-1-1.jpg" alt="bed 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/09/TCT015NS-1-548x450.jpg" alt="stable 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Brilliant Bed-NBBR 003 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.151,725</p>
+                    <p class="text-lg font-semibold">Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.79,339</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -284,80 +281,22 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/09/divan-bed4.jpg" alt="bed 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/09/MCT06-1-548x450.jpg" alt="stable 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed –  78″ x 60″( BP02)</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.71,890</p>
+                    <p class="text-lg font-semibold">Coffee Table</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.80,475</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
                 </div>
             </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/queenston-suite-bed-1-1-1.jpg" alt="bed 9" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                <p class="text-lg font-semibold">Queenston Bed – KBQ 003 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.79,575</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/01/Carvin-1-1-1.jpg" alt="bed 10" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Carvin Storage Bed-KBCA 007 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.123,880</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/origon-storage-548x450-1-1.jpg" alt="bed 11" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Origon Storage Bed – 78″ x 72″( KBOR008 )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.178,275</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/feori-Bed-1-1.jpg" alt="bed 12" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Feori Bed - KBFE 003 / 78″ x 60″ ,KBFE 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.86,460</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
+</div>
+</div>
 
-
-
-    <footer class="bg-green-900 text-white py-0">
+<footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->
     <div>

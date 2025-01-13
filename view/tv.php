@@ -179,32 +179,30 @@
 
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Beds</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Smart Television</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <!-- Product Card-->
+            <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Emerson.jpg" alt="bed 1" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SMGUA65DU7700-01.webp" alt="tv 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Emerson Bed
-                    (NBEM 003 / 78" x 60")<p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 142,240</p>
+                    <p class="text-lg font-semibold">Samsung 65" DU7700 Crystal 4K UHD Smart TVs<p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 499,200</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
                 </div>
             </div>
- <!--Repeat Product Card for 12 items -->
+            <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/california-storage-bed-1-1.jpg" alt="bed 2" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/K-65S30-01-20241024.webp" alt="tv 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">California Storage Bed – 78″ x 60″( KBCF007 )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 107,775</p>
+                    <p class="text-lg font-semibold">Sony BRAVIA 3 65" LED 4K HDR Google TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 539,499</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -213,12 +211,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/Bed-Web-1-1.jpg" alt="bed 3" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/KD-65X75K-01-20241024.webp" alt="tv 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Lora Bed - KBIR 02 / 78″ x 48″ ,03 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 44,400</p>
+                    <p class="text-lg font-semibold">Sony 65" X75K 4K UHD HDR Google TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 499,990</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -227,12 +225,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/beverly-bed-2-1-1.jpg" alt="bed 4" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/PN-TH-65MX740N-01-20241024.webp" alt="tv 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Beverly Bed – KBP 019 / 75″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 61,525</p>
+                    <p class="text-lg font-semibold">Panasonic 65" Google TV - 4K HDR TV </p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 374,999</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -241,12 +239,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/00A5363_1-1.jpg" alt="bed 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SMGUA55CU7700-01-20241024.webp" alt="tv 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed – BP03( Head Board + Bed Base )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 74,530</p>
+                    <p class="text-lg font-semibold">Samsung 55'' CU7700 Crystal 4K UHD Smart TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 309,149</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -255,12 +253,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/Ivory-Bed-1-1.jpg" alt="bed 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/PN-TH-55MX740N-01-20241024.webp" alt="tv 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Ivory Bed – NBIV 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.336,945</p>
+                    <p class="text-lg font-semibold">Panasonic 55" Google TV - 4K HDR TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.254,355</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -270,12 +268,12 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Brilliant-580x476-1-1-1.jpg" alt="bed 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/K-55S30-01-20241024.webp" alt="tv 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Brilliant Bed-NBBR 003 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.151,725</p>
+                    <p class="text-lg font-semibold">Sony BRAVIA 3 55" LED 4K HDR Google TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.389,999</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -284,12 +282,12 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/09/divan-bed4.jpg" alt="bed 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/KD-55X75K-01-20241024.webp" alt="tv 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed –  78″ x 60″( BP02)</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.71,890</p>
+                    <p class="text-lg font-semibold">Sony 55" X75K 4K UHD HDR Google TV</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.339,599</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -298,12 +296,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/queenston-suite-bed-1-1-1.jpg" alt="bed 9" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SLE32E930-01-20241024.webp" alt="tv 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                <p class="text-lg font-semibold">Queenston Bed – KBQ 003 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.79,575</p>
+                <p class="text-lg font-semibold">Singer 32" HD TV - SLE32E930</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.52,489</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -312,12 +310,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/01/Carvin-1-1-1.jpg" alt="bed 10" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/PN-TH-32M402N-01-20241024.webp" alt="tv 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Carvin Storage Bed-KBCA 007 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.123,880</p>
+                    <p class="text-lg font-semibold">Panasonic 32" HD Television</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.57,690</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -326,12 +324,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/origon-storage-548x450-1-1.jpg" alt="bed 11" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/PN-TH-32MS670N-01-20241024.webp" alt="tv 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Origon Storage Bed – 78″ x 72″( KBOR008 )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.178,275</p>
+                    <p class="text-lg font-semibold">Panasonic 32"  Google LED TV </p>
+                    <p class="text-xl text-red-600 mt-2">Rs.74,299</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -340,12 +338,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/feori-Bed-1-1.jpg" alt="bed 12" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SMG_SMGUA32N4010-01_zoom-20241024.webp" alt="tv 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Feori Bed - KBFE 003 / 78″ x 60″ ,KBFE 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.86,460</p>
+                    <p class="text-lg font-semibold">Samsung LED TV HD 32"</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.59,400</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -353,7 +351,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
 
 

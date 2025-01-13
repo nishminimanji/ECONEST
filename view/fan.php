@@ -179,32 +179,30 @@
 
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Beds</h1>
+        <h1 class="text-3xl font-bold text-center mb-8">Fans</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <!-- Product Card-->
+            <!-- Product Card -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Emerson.jpg" alt="bed 1" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-409Mnew-548x450.jpg" alt="fan 1" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Emerson Bed
-                    (NBEM 003 / 78" x 60")<p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 142,240</p>
+                    <p class="text-lg font-semibold">Panasonic Wall Fan<p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 36,200</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
                     </div>
                 </div>
             </div>
- <!--Repeat Product Card for 12 items -->
+            <!-- Repeat Product Card for 12 items -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/california-storage-bed-1-1.jpg" alt="bed 2" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2020/12/ITF006-548x450.jpg" alt="fan 2" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">California Storage Bed – 78″ x 60″( KBCF007 )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 107,775</p>
+                    <p class="text-lg font-semibold">Innovex Table Fan</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 10,670</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -214,11 +212,11 @@
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/Bed-Web-1-1.jpg" alt="bed 3" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2020/06/IWF003R-548x450.jpg" alt="fan 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Lora Bed - KBIR 02 / 78″ x 48″ ,03 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 44,400</p>
+                    <p class="text-lg font-semibold">Innovex Wall Fan with Remote</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 14,400</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -228,11 +226,11 @@
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
                 <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/beverly-bed-2-1-1.jpg" alt="bed 4" class="w-100 h-100 object-cover">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-56MZ2-548x450.jpg" alt="fan 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Beverly Bed – KBP 019 / 75″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 61,525</p>
+                    <p class="text-lg font-semibold">Panasonic Ceiling Fan</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 23,575</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -241,12 +239,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/08/00A5363_1-1.jpg" alt="bed 5" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SIN_FAN-P-1605H-01.webp" alt="fan 5" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed – BP03( Head Board + Bed Base )</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 74,530</p>
+                    <p class="text-lg font-semibold">Singer Pedestal Fan 50W 3 Speeds</p>
+                    <p class="text-xl text-red-600 mt-2">Rs. 22,390</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -255,12 +253,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/Ivory-Bed-1-1.jpg" alt="bed 6" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SIN_FAN-DFP750T-01_zoom.webp" alt="fan 6" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Ivory Bed – NBIV 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.336,945</p>
+                    <p class="text-lg font-semibold">Singer Industrial Pedestal Fan 30 Inch, 03 Blades</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.46,730</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -270,11 +268,11 @@
              <!-- Add more products as required -->
                
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/12/Brilliant-580x476-1-1-1.jpg" alt="bed 7" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/FAN-P-SF1605HR-01.webp" alt="fan 7" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Brilliant Bed-NBBR 003 / 78″ x 60″</p>
+                    <p class="text-lg font-semibold">Singer Pedestal Fan With Remorte, 60W, 3 Speeds </p>
                     <p class="text-xl text-red-600 mt-2">Rs.151,725</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
@@ -284,12 +282,12 @@
             </div>
               <!-- Add more products as required -->
               <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2024/09/divan-bed4.jpg" alt="bed 8" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SL-SF316AR-RC-01.webp" alt="fan 8" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Upholstery Bed –  78″ x 60″( BP02)</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.71,890</p>
+                    <p class="text-lg font-semibold">Sisil 55W Pedestal Fan With Remote</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.15,999</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -298,12 +296,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/queenston-suite-bed-1-1-1.jpg" alt="bed 9" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2021/06/isf017-548x450.jpg" alt="fan 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                <p class="text-lg font-semibold">Queenston Bed – KBQ 003 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.79,575</p>
+                <p class="text-lg font-semibold">Innovex Stand Fan</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.10,540</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -312,12 +310,12 @@
             </div>
             <!-- Add more products as required -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/01/Carvin-1-1-1.jpg" alt="bed 10" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2019/11/F-407W-548x450.jpg" alt="fan 10" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Carvin Storage Bed-KBCA 007 / 78″ x 60″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.123,880</p>
+                    <p class="text-lg font-semibold">Panasonic Stand Fan</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.46,420</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -326,11 +324,11 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2021/12/origon-storage-548x450-1-1.jpg" alt="bed 11" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2020/06/ISF165R-548x450.jpg" alt="fan 11" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Origon Storage Bed – 78″ x 72″( KBOR008 )</p>
+                    <p class="text-lg font-semibold">Innovex Stand Fan with Remote</p>
                     <p class="text-xl text-red-600 mt-2">Rs.178,275</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
@@ -340,12 +338,12 @@
             </div>
              <!-- Add more products as required -->
              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/02/feori-Bed-1-1.jpg" alt="bed 12" class="w-100 h-100 object-cover">
+                <div class="w-full h-45">
+                    <img src="https://damro.lk/wp-content/uploads/2020/12/ISF008-548x450.jpg" alt="fan 12" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Feori Bed - KBFE 003 / 78″ x 60″ ,KBFE 004 / 78″ x 72″</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.86,460</p>
+                    <p class="text-lg font-semibold">Innovex Stand Fan</p>
+                    <p class="text-xl text-red-600 mt-2">Rs.12,990</p>
                     <div class="mt-4 flex justify-between">
                         <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
                         <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
@@ -353,8 +351,7 @@
                 </div>
             </div>
         </div>
-    </div> 
-
+    </div>
 
 
     <footer class="bg-green-900 text-white py-0">

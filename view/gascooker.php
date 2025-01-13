@@ -3,74 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - About Us</title>
+  <title>EcoNest - Home Appliances</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
-    .carousel-inner {
-      width: 300%;
-      transition: transform 1s ease-in-out;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f4f4f4;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      min-width: 220px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
     }
-    .carousel-slide {
-      width: 100%;
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: #333;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      display: block;
+      border-radius: 4px;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .category {
+      margin-bottom: 10px;
+    }
+    .subcategory {
+      display: none;
+      padding-left: 1rem;
+    }
+    .category:hover .subcategory {
+      display: block;
     }
   </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-
+<body class="bg-gray-100">
 
   <!-- Navigation Bar -->
   <header class="bg-green-700 shadow">
     <div class="container mx-auto flex justify-between items-center py-2 px-4 text-white">
-      <div class="flex items-center space-x-6">
-        <a href="/" class="flex items-center space-x-6">
-          <img src="/images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
-        </a>
-        <div x-data="{ open: false }" class="relative">
-          <button @click="open = !open" class="flex items-center space-x-2 text-white bg-green-800 px-4 py-2 rounded-lg hover:bg-green-900">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <span>All Categories</span>
-          </button>
-          <div x-show="open" @click.away="open = false" class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded-lg overflow-hidden z-10">
-            <a href="#kitchen-appliances" class="block px-4 py-2 hover:bg-gray-100">Kitchen Appliances</a>
-            <a href="#bath-wares" class="block px-4 py-2 hover:bg-gray-100">Bath Wares</a>
-            <a href="#dining-appliances" class="block px-4 py-2 hover:bg-gray-100">Dining Appliances</a>
-            <a href="#living-area" class="block px-4 py-2 hover:bg-gray-100">Living Area</a>
-            <a href="#outside" class="block px-4 py-2 hover:bg-gray-100">Outside</a>
+      <!-- Logo Section - Move it to the left -->
+      <a href="/" class="flex items-center space-x-6">
+        <img src="../images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
+      </a>
+
+      <!-- Main Categories Dropdown -->
+      <div class="dropdown relative ml-8"> <!-- ml-8 added to create space between logo and dropdown -->
+        <button class="text-white px-4 py-2 flex items-center space-x-2">
+          <span>Products</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <!-- Kitchen Category -->
+          <div class="category">
+            <a href="#kitchen" class="font-semibold flex items-center space-x-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/kitchen.png" class="h-5 w-5" alt="Kitchen Icon">
+              <span>Kitchen Appliances</span>
+            </a>
+            <div class="subcategory">
+              <a href="../view/blender.php">Blenders & Mixers</a>
+              <a href="../view/ricecooker.php">Rice Cookers</a>
+              <a href="../view/gascooker.php">Gas Cookers</a>
+              <a href="../view/oven.php">Microwaves & Ovens</a>
+              <a href="../view/kettles.php">Electric Kettles</a>
+            </div>
+          </div>
+
+          <!-- Dining Room Category -->
+          <div class="category">
+            <a href="#dining-room" class="font-semibold flex items-center space-x-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/dining-room.png" class="h-5 w-5" alt="Dining Room Icon">
+              <span>Dining Room</span>
+            </a>
+            <div class="subcategory">
+              <a href="../view/diningtable.php">Dining Tables</a>
+              <a href="../view/pantrycupboard.php">Pantry Cupboards</a>
+            </div>
+          </div>
+
+          <!-- Bath Wares Category -->
+          <div class="category">
+            <a href="#bath-wares" class="font-semibold flex items-center space-x-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/bath.png" class="h-5 w-5" alt="Bath Icon">
+              <span>Bath Wares</span>
+            </a>
+            <div class="subcategory">
+              <a href="../view/washingmachine.php">Washing Machines</a>
+              <a href="../view/hotwater.php">Hot Water Shower</a>
+            </div>
+          </div>
+
+          <!-- Bedroom Category -->
+          <div class="category">
+            <a href="#bedroom" class="font-semibold flex items-center space-x-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/bed.png" class="h-5 w-5" alt="Bedroom Icon">
+              <span>Bed Room</span>
+            </a>
+            <div class="subcategory">
+              <a href="../view/bed.php">Beds</a>
+              <a href="../view/bedcupboard.php">Bed Cupboards</a>
+              <a href="../view/dressingtable.php">Dressing Tables</a>
+            </div>
+          </div>
+
+          <!-- Living Room Category -->
+          <div class="category">
+            <a href="#living-room" class="font-semibold flex items-center space-x-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/living-room.png" class="h-5 w-5" alt="Living Room Icon">
+              <span>Home Appliances </span>
+            </a>
+            <div class="subcategory">
+              <a href="../view/sofa.php">Sofa  Sets</a>
+              <a href="../view/tv.php">Televisions</a>
+              <a href="../view/sidetable.php">Side Tables</a>
+              <a href="../view/fan.php">Fans</a>
+              <a href="../view/iron.php">Dry Irons & Stream Irons</a>
+              <a href="../view/refrigerator.php">Refrigerators</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Navigation Links -->
       <nav class="space-x-4 flex items-center">
-        <a href="index.php" class="hover:text-yellow-300">Home</a>
+        <a href="../index.php" class="hover:text-yellow-300">Home</a>
         <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
         <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
         <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
         <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
-      <div class="flex items-center space-x-4">
-        <div class="relative">
-          <input type="text" placeholder="Search for products" class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none" />
-          <span class="absolute top-2.5 right-3 text-gray-500">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
-            </svg>
-          </span>
-        </div>
-        <div class="relative flex items-center space-x-1">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
-          </svg>
-          <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
-          <span class="text-white">Cart</span>
-        </div>
-        <a href="#login" class="bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">Login</a>
-        <a href="#signup" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
-      </div>
-    </div>
+      <div class="flex items-center space-x-4 ml-auto">
+  <!-- Search Bar -->
+  <div class="relative">
+    <input
+      type="text"
+      placeholder="Search for products"
+      class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none"
+    />
+    <span class="absolute top-2.5 right-3 text-gray-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
+      </svg>
+    </span>
+  </div>
+
+  <!-- Cart Icon with Redirection -->
+  <a href="../ECONEST/view/cart.php" class="relative flex items-center space-x-1">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
+    </svg>
+    <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
+    <span class="text-white">Cart</span>
+  </a>
+
+  <!-- Login Button -->
+  <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
+    <img src="https://buyabans.com/themes/buyabans/assets/images/latest-icon/account-icon.png" alt="Profile Icon" class="h-5 w-5 mr-2">
+    <span>Login</span>
+  </a>
+
+  <!-- Sign Up Button -->
+  <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
+ </div>
   </header>
+
   <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold text-center mb-8">Rice Cookers</h1>
@@ -253,11 +359,11 @@
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Find Us Here Section -->
     <div>
-      <div class="flex justify-center items-center mb-0">
-        <img src="logo1.png" alt="EcoNest Logo" class="h-20 mr-2">
+      <div class="flex justify-center items-center pt-4">
+        <img src="../images/logo1.png" alt="EcoNest Logo" class="h-20 mr-2">
         <h3 class="text-xl font-bold mb-5">Find Us Here</h3>
       </div>
-      <p class="mb-4 text-sm">
+      <p class="mb-4 text-sm text-center">
         If you have any questions about our services or would like to learn more about our products, feel free to reach out to us. We're here to help and provide you with the best home appliance solutions. Don’t hesitate to contact us – we’re just a click away!
       </p>
       <ul class="flex justify-center space-x-6 mb-4">
@@ -287,111 +393,107 @@
         </li>
       </ul>
     </div>
+<!-- Menu and Contact Us Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+    
+  <!-- Menu Section -->
+  <div class="pt-8 ml-4">
+    <h3 class="text-xl font-bold mb-8">Menu</h3>
+    <ul class="flex flex-col items-start space-y-4 text-sm">
+      <li>
+        <a href="../index.php" class="hover:text-gray-300 flex items-center">
+          Home
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12l5 5L20 7"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="../view/about.php" class="hover:text-gray-300 flex items-center">
+          AboutUs
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12l5 5L20 7"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="../view/brands.php" class="hover:text-gray-300 flex items-center">
+          Brand
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12l5 5L20 7"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="../view/services.php" class="hover:text-gray-300 flex items-center">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12l5 5L20 7"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="../view/contactus.php" class="hover:text-gray-300 flex items-center">
+          ContactUs
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M5 12l5 5L20 7"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <!-- Menu Section -->
-    <div>
-      <h3 class="text-xl font-bold mb-4">Menu</h3>
-      <ul class="flex flex-col items-center space-y-4 text-center text-sm">
-        <li>
-          <a href="#home" class="hover:text-gray-300 flex items-center">
-            Home
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path d="M5 12l5 5L20 7"></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#about" class="hover:text-gray-300 flex items-center">
-            About
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path d="M5 12l5 5L20 7"></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="hover:text-gray-300 flex items-center">
-            Contact
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path d="M5 12l5 5L20 7"></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#server" class="hover:text-gray-300 flex items-center">
-            Server
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path d="M5 12l5 5L20 7"></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#brand" class="hover:text-gray-300 flex items-center">
-            Brand
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path d="M5 12l5 5L20 7"></path>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <!-- Contact Us Section -->
+  <div class="pt-8 md:pt-8 md:flex md:flex-col items-center md:col-span-2">
+    <h3 class="text-xl font-bold mb-6 text-center">Contact</h3>
+    <p>Email:<a href="mailto:support@econest.com" class="hover:underline">support@econest.com</a></p>
+    <p>Phone:+9411456789</p>
+    <p>Hours:Mon-Fri,9AM-6PM</p>
+  </div>
+</div>
 
-    <!-- Contact Us and Location Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Contact Us -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-        <p>Email: <a href="mailto:support@econest.com" class="hover:underline">support@econest.com</a></p>
-        <p>Phone: +94 11-456-789</p>
-        <p>Hours: Mon-Fri, 9 AM - 6 PM</p>
+    <!-- Location Section -->
+    <div class="pt-8 md:pt-8 md:flex md:flex-col items-center md:col-span-1">
+      <h3 class="text-xl font-bold mb-6 text-center">Location</h3>
+      <div class="text-center">
+        <p>EcoNest Headquarters</p>
+        <p>123 Green Lane</p>
+        <p>Maharagama, Sri Lanka</p>
       </div>
-
-      <!-- Location -->
-    <div>
-      <h3 class="text-xl font-bold mb-4">Location</h3>
-      <p>EcoNest Headquarters</p>
-      <p>123 Green Lane</p>
-      <p>Maharagama, Sri Lanka</p>
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.749518275126!2d79.922264!3d6.8450901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2501c745e2503%3A0xffcf37db8bbf44e7!2sMaharagama!5e0!3m2!1sen!2slk!4v1699891515155!5m2!1sen!2slk" 
-        width="110%" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
   </div>
-  </div>
 
-
-  
   <!-- Separator -->
-<hr class="my-2 border-green-900" />
+  <hr class="my-2 border-green-900" />
 
-<!-- Second Footer -->
-<div class="bg-green-700 text-white py-6">
-<div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+  <!-- Second Footer -->
+  <div class="bg-green-700 text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <!-- Terms & Conditions, Privacy Policy, FAQ -->
-    
-    <!-- Terms & Conditions, Privacy Policy, FAQ -->
-    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center text-sm">
-      <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
-      <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-      <a href="#" class="hover:text-gray-300">FAQ</a>
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center text-sm">
+        <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
+        <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-300">FAQ</a>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 md:mt-0">
+        <img src="https://mysoftlogic.lk/build/images/logos_1.3153c53c.png" alt="Visa" class="h-5">
+        <img src="https://mysoftlogic.lk/build/images/logos_2.52283647.png" alt="MasterCard" class="h-5">
+        <img src="https://mysoftlogic.lk/build/images/logos_4.301b650b.png" alt="PayPal" class="h-5">
+        <img src="https://mysoftlogic.lk/build/images/frimi.257e7857.png" alt="Frimi" class="h-5">
+      </div>
     </div>
 
-    <!-- Payment Methods -->
-    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center mt-4 md:mt-0">
-      <img src="https://mysoftlogic.lk/build/images/logos_1.3153c53c.png" alt="Visa" class="h-5">
-      <img src="https://mysoftlogic.lk/build/images/logos_2.52283647.png" alt="MasterCard" class="h-5">
-      <img src="https://mysoftlogic.lk/build/images/logos_4.301b650b.png" alt="PayPal" class="h-5">
-      <img src="https://mysoftlogic.lk/build/images/frimi.257e7857.png" alt="Frimi" class="h-5">
+    <!-- Copyright Section -->
+    <div class="text-center mt-6 text-sm">
+      © 2024 EcoNest. All rights reserved.
     </div>
   </div>
-
-  <!-- Copyright Section -->
-  <div class="text-center mt-6 text-sm">
-    © 2024 EcoNest. All rights reserved.
-  </div>
-</div>
 </footer>
-  
 </body>
 </html>
-
