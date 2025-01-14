@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - Home Appliances</title>
+  <title>EcoNest - blender</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
@@ -156,15 +156,27 @@
     </span>
   </div>
 
-  <!-- Cart Icon with Redirection -->
-  <a href="../view/cart.php" class="relative flex items-center space-x-1">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+ <!-- Cart Icon with Pop-Up Message -->
+<a href="#" id="cart-icon" class="relative flex items-center space-x-2 cursor-pointer mt-5 ml-5">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
     </svg>
     <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
-    <span class="text-white">Cart</span>
-  </a>
+    <span class="text-white font-medium">Cart</span>
+</a>
+
+<!-- Pop-Up Modal -->
+<div id="popup-message" class="fixed top-0 right-0 flex items-center justify-center z-50 bg-black bg-opacity-30 hidden">
+    <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full relative border-2 border-gray-300">
+        <!-- Cart header -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
+        <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
+        <div class="flex justify-between items-center">
+            <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
+        </div>
+    </div>
+</div>
 
   <!-- Login Button -->
   <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
@@ -189,10 +201,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Mixer Grinder - 550W</p>
                     <p class="text-xl text-red-600 mt-2">Rs. 15,000</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Repeat Product Card for 12 items -->
@@ -203,10 +216,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Mixer Grinder - 750W</p>
                     <p class="text-xl text-red-600 mt-2">Rs. 19,855</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Add more products as required -->
@@ -215,12 +229,13 @@
                     <img src="https://damroonline.lk/wp-content/uploads/2021/08/MX-AC300.jpg" alt="Blender 3" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Super Mixer Grinders – 1000W</p>
+                    <p class="text-lg font-semibold">Panasonic Super Mixer Grinders</p>
                     <p class="text-xl text-red-600 mt-2">Rs. 30,970</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
              <!-- Add more products as required -->
@@ -229,12 +244,13 @@
                     <img src="https://damroonline.lk/wp-content/uploads/2021/09/Product1-MX-AV425-o-1.jpg" alt="Blender 4" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
+                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders</p>
                     <p class="text-xl text-red-600 mt-2">Rs. 40,575</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Add more products as required -->
@@ -245,10 +261,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Panasonic Hand Mixer – 175W</p>
                     <p class="text-xl text-red-600 mt-2">Rs. 11 970</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Add more products as required -->
@@ -259,10 +276,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Panasonic Stand Mixer – 175W</p>
                     <p class="text-xl text-red-600 mt-2">Rs.15,960</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
              <!-- Add more products as required -->
@@ -274,10 +292,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Stand Mixer – 300W</p>
                     <p class="text-xl text-red-600 mt-2">Rs.13,90</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
               <!-- Add more products as required -->
@@ -288,10 +307,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Innovex Hand Mixer</p>
                     <p class="text-xl text-red-600 mt-2">Rs.9,110</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Add more products as required -->
@@ -300,12 +320,13 @@
                     <img src="https://damroonline.lk/wp-content/uploads/2021/09/mxav425y-1-1-380x312.jpg" alt="Blender 9" class="w-100 h-100 object-cover">
                 </div>
                 <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders – 600W</p>
+                    <p class="text-lg font-semibold">Panasonic 4 Jar Mixer Grinders</p>
                     <p class="text-xl text-red-600 mt-2">Rs.38,665</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
             <!-- Add more products as required -->
@@ -316,10 +337,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Preethi Steele</p>
                     <p class="text-xl text-red-600 mt-2">Rs.55,240</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
              <!-- Add more products as required -->
@@ -330,10 +352,11 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">ethi Blue Leaf – 750W</p>
                     <p class="text-xl text-red-600 mt-2">Rs.38,040</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+                  
+                   
+            
                 </div>
             </div>
              <!-- Add more products as required -->
@@ -344,16 +367,57 @@
                 <div class="p-4">
                     <p class="text-lg font-semibold">Preethi Nitro – 750W</p>
                     <p class="text-xl text-red-600 mt-2">Rs.29,440</p>
-                    <div class="mt-4 flex justify-between">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">Add to Cart</button>
-                        <button class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-300">Wishlist</button>
-                    </div>
+                    <div class="mt-4 flex justify-center">
+                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
+          
                 </div>
             </div>
         </div>
     </div>
 
 
+    <script>
+  // Get elements
+  const cartIcon = document.getElementById('cart-icon');
+  const cartQuantity = cartIcon.querySelector('span'); // Cart quantity
+  const addToCartButtons = document.querySelectorAll('.add-to-cart'); // Add to Cart buttons
+  const popupMessage = document.getElementById('popup-message');
+  const closePopup = document.getElementById('close-popup');
+
+  // Function to update the cart quantity
+  function updateCartQuantity() {
+    let currentQuantity = parseInt(cartQuantity.textContent);
+    cartQuantity.textContent = currentQuantity + 1; // Increase the quantity
+
+    // Hide the pop-up message if the quantity is greater than 0
+    if (parseInt(cartQuantity.textContent) > 0) {
+      popupMessage.style.display = 'none';
+    }
+  }
+
+  // Add event listeners to each Add to Cart button
+  addToCartButtons.forEach((button) => {
+    button.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default button behavior
+      updateCartQuantity(); // Update the cart quantity
+    });
+  });
+
+  // Open the pop-up when the cart icon is clicked
+  cartIcon.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default redirect action
+
+    // Show the pop-up only if the cart quantity is 0
+    if (parseInt(cartQuantity.textContent) === 0) {
+      popupMessage.style.display = 'flex'; // Show the pop-up
+    }
+  });
+
+  // Close the pop-up when the close button is clicked
+  closePopup.addEventListener('click', function () {
+    popupMessage.style.display = 'none'; // Hide the pop-up
+  });
+</script>
 
     <footer class="bg-green-900 text-white py-0">
   <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - Irons</title>
+  <title>EcoNest - Admin Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
@@ -12,7 +12,7 @@
       position: absolute;
       background-color: #f4f4f4;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1;
+      z-index: 50;
       min-width: 220px;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -42,20 +42,25 @@
     .category:hover .subcategory {
       display: block;
     }
+    #popup-message {
+      display: none;
+      top: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 <body class="bg-gray-100">
 
   <!-- Navigation Bar -->
   <header class="bg-green-700 shadow">
-    <div class="container mx-auto flex justify-between items-center py-2 px-4 text-white">
+    <div class="container mx-auto flex flex-wrap justify-between items-center py-2 px-4 text-white">
       <!-- Logo Section - Move it to the left -->
       <a href="/" class="flex items-center space-x-6">
         <img src="../images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
       </a>
 
       <!-- Main Categories Dropdown -->
-      <div class="dropdown relative ml-8"> <!-- ml-8 added to create space between logo and dropdown -->
+      <div class="dropdown relative ml-8 flex-shrink-0"> 
         <button class="text-white px-4 py-2 flex items-center space-x-2">
           <span>Products</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -122,11 +127,11 @@
               <span>Home Appliances </span>
             </a>
             <div class="subcategory">
-              <a href="../view/sofa.php">Sofa  Sets</a>
+              <a href="../view/sofa.php">Sofa Sets</a>
               <a href="../view/tv.php">Televisions</a>
               <a href="../view/sidetable.php">Side Tables</a>
               <a href="../view/fan.php">Fans</a>
-              <a href="../view/iron.php">Dry Irons & Stream Irons</a>
+              <a href="../view/iron.php">Dry Irons & Steam Irons</a>
               <a href="../view/refrigerator.php">Refrigerators</a>
             </div>
           </div>
@@ -134,208 +139,189 @@
       </div>
 
       <!-- Navigation Links -->
-      <nav class="space-x-4 flex items-center">
+      <nav class="space-x-4 flex flex-wrap items-center mt-2 md:mt-0">
         <a href="../index.php" class="hover:text-yellow-300">Home</a>
         <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
         <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
         <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
         <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
-      <div class="flex items-center space-x-4 ml-auto">
-  <!-- Search Bar -->
-  <div class="relative">
-    <input
-      type="text"
-      placeholder="Search for products"
-      class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none"
-    />
-    <span class="absolute top-2.5 right-3 text-gray-500">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
-      </svg>
-    </span>
-  </div>
+      
+      <!-- Right Section (Search Bar, Cart Icon, Login & Sign Up Buttons) -->
+      <div class="flex flex-wrap items-center space-x-4 ml-auto mt-2 md:mt-0">
+        <!-- Search Bar -->
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search for products"
+            class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none"
+          />
+          <span class="absolute top-2.5 right-3 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
+            </svg>
+          </span>
+        </div>
 
-  
-<!-- Cart Icon with Pop-Up Message -->
-<a href="#" id="cart-icon" class="relative flex items-center space-x-2 cursor-pointer mt-5 ml-5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        
+   <!-- Cart Icon with Pop-Up Message -->
+   <a href="#" id="cart-icon" class="relative flex items-center space-x-1 cursor-pointer mt-5 ml-5">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
     </svg>
     <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
-    <span class="text-white font-medium">Cart</span>
-</a>
+    <span class="text-white">Cart</span>
+  </a>
 
-<!-- Pop-Up Modal -->
-<div id="popup-message" class="fixed top-0 right-0 flex items-center justify-center z-50 bg-black bg-opacity-30 hidden">
+  <!-- Pop-Up Modal positioned at top-right -->
+  <div id="popup-message" class="fixed flex items-center justify-center z-50">
     <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full relative border-2 border-gray-300">
-        <!-- Cart header -->
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
-        <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
-        <div class="flex justify-between items-center">
-            <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
+      <!-- Cart header -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
+      <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
+      <div class="flex justify-between items-center">
+        <!-- Cart actions or suggestions -->
+        <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get elements
+    const cartIcon = document.getElementById('cart-icon');
+    const popupMessage = document.getElementById('popup-message');
+    const closePopup = document.getElementById('close-popup');
+
+    // Open the pop-up when the cart icon is clicked
+    cartIcon.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevent the default redirect action
+      popupMessage.style.display = 'flex';  // Show the pop-up
+    });
+
+    // Close the pop-up when the close button is clicked
+    closePopup.addEventListener('click', function() {
+      popupMessage.style.display = 'none';  // Hide the pop-up
+    });
+  </script>
+
+        <!-- Login Button -->
+        <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
+          <img src="https://buyabans.com/themes/buyabans/assets/images/latest-icon/account-icon.png" alt="Profile Icon" class="h-5 w-5 mr-2">
+          <span>Login</span>
+        </a>
+
+        <!-- Sign Up Button -->
+        <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+<div class="w-full p-6 bg-gray-100"> <!-- Add background color here -->
+    <!-- Header -->
+    <header class="flex justify-between items-center mb-6"> <!-- Center header text and logout button -->
+        <h1 class="text-3xl font-semibold text-gray-800">Admin Dashboard</h1>
+        <a href="../index.php" class="bg-green-700 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-800 transition duration-300">
+            Logout
+        </a>
+    </header>
+
+    <!-- Dashboard Navigation Functions -->
+    <section class="custom-card p-8 mb-8 bg-yellow-200 rounded-lg shadow-md"> <!-- Background color for quick navigation -->
+        <h2 class="text-2xl font-semibold text-gray-700 mb-8">Quick Navigation</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Dashboard Overview -->
+            <a href="#" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <h3 class="font-bold text-xl text-gray-800">Dashboard Overview</h3>
+                <p class="text-sm text-gray-500 mt-2">Monitor key metrics and activity.</p>
+            </a>
+            <!-- Sales Overview -->
+            <a href="#" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <h3 class="font-bold text-xl text-gray-800">Sales Overview</h3>
+                <p class="text-sm text-gray-500 mt-2">View and analyze sales data.</p>
+            </a>
+            <!-- Inventory Management -->
+            <a href="#" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <h3 class="font-bold text-xl text-gray-800">Inventory Management</h3>
+                <p class="text-sm text-gray-500 mt-2">Track stock levels and product availability.</p>
+            </a>
+            <!-- Customer Behavior -->
+            <a href="#" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <h3 class="font-bold text-xl text-gray-800">Customer Behavior</h3>
+                <p class="text-sm text-gray-500 mt-2">Analyze customer trends and insights.</p>
+            </a>
+            <!-- Analytics -->
+            <a href="#" class="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                <h3 class="font-bold text-xl text-gray-800">Analytics</h3>
+                <p class="text-sm text-gray-500 mt-2">Access detailed performance reports.</p>
+            </a>
         </div>
+    </section>
+
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 mt-12"> <!-- Increased margin-top to move it down -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-sm text-gray-500">Total Sales</h2>
+            <p class="text-3xl font-semibold text-gray-800">$15,230</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-sm text-gray-500">New Customers</h2>
+            <p class="text-3xl font-semibold text-gray-800">320</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-sm text-gray-500">Total Orders</h2>
+            <p class="text-3xl font-semibold text-gray-800">1,230</p>
+        </div>
+    </div>
+
+    <!-- Sales and Inventory Charts -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Sales Overview -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Sales Overview</h2>
+            <p class="text-sm text-gray-500">Chart placeholder</p>
+        </div>
+
+        <!-- Inventory Status -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Inventory Status</h2>
+            <p class="text-sm text-gray-500">Chart placeholder</p>
+        </div>
+    </div>
+
+    <!-- Recent Orders -->
+    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold text-gray-800 mb-6">Recent Orders</h2>
+        <table class="w-full table-auto text-sm text-gray-600">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="px-4 py-2 text-left">Order ID</th>
+                    <th class="px-4 py-2 text-left">Customer</th>
+                    <th class="px-4 py-2 text-left">Date</th>
+                    <th class="px-4 py-2 text-left">Amount</th>
+                    <th class="px-4 py-2 text-left">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="px-4 py-2">#00123</td>
+                    <td class="px-4 py-2">John Doe</td>
+                    <td class="px-4 py-2">01/12/2025</td>
+                    <td class="px-4 py-2">$120</td>
+                    <td class="px-4 py-2 text-green-700">Completed</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">#00124</td>
+                    <td class="px-4 py-2">Jane Smith</td>
+                    <td class="px-4 py-2">01/12/2025</td>
+                    <td class="px-4 py-2">$75</td>
+                    <td class="px-4 py-2 text-yellow-500">Pending</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
-  <!-- Login Button -->
-  <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
-    <img src="https://buyabans.com/themes/buyabans/assets/images/latest-icon/account-icon.png" alt="Profile Icon" class="h-5 w-5 mr-2">
-    <span>Login</span>
-  </a>
-
-  <!-- Sign Up Button -->
-  <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
- </div>
-  </header>
-
-  <body class="bg-gray-100">
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Dry Irons & Strem Irons</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Product Card -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2019/11/NI-317T-548x450.jpg" alt="iron 1" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Dry Iron<p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 6,860</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-            <!-- Repeat Product Card for 12 items -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/11/NIM250T-548x450.jpg" alt="iron 2" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Panasonic Steam Iron</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 8,940</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/08/IDI002-1-548x450.jpg" alt="iron 3" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Dry Iron</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 3,399</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-48">
-                    <img src="https://damro.lk/wp-content/uploads/2020/11/IDI006-1-black.jpg" alt="iron 4" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Innovex Heavy Weight Dry Iron</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 5,400</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/BD-X1750-B5-01.webp" alt="iron 5" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">BLACK+DECKER 1750W Steam Iron Non-Stick Soleplate</p>
-                    <p class="text-xl text-red-600 mt-2">Rs. 17,900</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-            <!-- Add more products as required -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/BD-X2200-B5-01.webp" alt="iron 6" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">BLACK+DECKER 2200W Steam Iron Non-Stick Soleplate</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.18,200</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-             <!-- Add more products as required -->
-               
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/BD-X1575-B5-01.webp" alt="iron 7" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">BLACK+DECKER 1600W Steam Iron Ceramic Soleplate</p>
-                    <p class="text-xl text-red-600 mt-2">Rs.19,900</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-              <!-- Add more products as required -->
-              <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-                <div class="w-full h-45">
-                    <img src="https://singerwebcdn.azureedge.net/resources/products/normal/SIS-ATC-603-01.webp" alt="iron 8" class="w-100 h-100 object-cover">
-                </div>
-                <div class="p-4">
-                    <p class="text-lg font-semibold">Singer Steam Iron SIS-ATC-603 - 2600W</p>
-                    <p class="text-xl text-red-600 mt-2">6,399</p>
-                    <div class="mt-4 flex justify-center">
-                    <button class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-400 add-to-cart text-center">Add to Cart</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-  // Get elements
-  const cartIcon = document.getElementById('cart-icon');
-  const cartQuantity = cartIcon.querySelector('span'); // Cart quantity
-  const addToCartButtons = document.querySelectorAll('.add-to-cart'); // Add to Cart buttons
-  const popupMessage = document.getElementById('popup-message');
-  const closePopup = document.getElementById('close-popup');
-
-  // Function to update the cart quantity
-  function updateCartQuantity() {
-    let currentQuantity = parseInt(cartQuantity.textContent);
-    cartQuantity.textContent = currentQuantity + 1; // Increase the quantity
-
-    // Hide the pop-up message if the quantity is greater than 0
-    if (parseInt(cartQuantity.textContent) > 0) {
-      popupMessage.style.display = 'none';
-    }
-  }
-
-  // Add event listeners to each Add to Cart button
-  addToCartButtons.forEach((button) => {
-    button.addEventListener('click', function (event) {
-      event.preventDefault(); // Prevent the default button behavior
-      updateCartQuantity(); // Update the cart quantity
-    });
-  });
-
-  // Open the pop-up when the cart icon is clicked
-  cartIcon.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default redirect action
-
-    // Show the pop-up only if the cart quantity is 0
-    if (parseInt(cartQuantity.textContent) === 0) {
-      popupMessage.style.display = 'flex'; // Show the pop-up
-    }
-  });
-
-  // Close the pop-up when the close button is clicked
-  closePopup.addEventListener('click', function () {
-    popupMessage.style.display = 'none'; // Hide the pop-up
-  });
-</script>
 
 
     <footer class="bg-green-900 text-white py-0">

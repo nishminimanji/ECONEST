@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - Home Appliances</title>
+  <title>EcoNest - Virtualroom Setup</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
@@ -48,6 +48,12 @@
     .room-placeholder {
       color: #9ca3af; 
       font-size: 1rem;
+    }
+    #popup-message {
+      display: none;
+      top: 20px;
+      right: 20px;
+    
     }
   </style>
 </head>
@@ -163,8 +169,9 @@
     </span>
   </div>
 
-  <!-- Cart Icon with Redirection -->
-  <a href="../view/cart.php" class="relative flex items-center space-x-1">
+ 
+   <!-- Cart Icon with Pop-Up Message -->
+   <a href="#" id="cart-icon" class="relative flex items-center space-x-1 cursor-pointer mt-5 ml-5">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -172,6 +179,38 @@
     <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
     <span class="text-white">Cart</span>
   </a>
+
+  <!-- Pop-Up Modal positioned at top-right -->
+  <div id="popup-message" class="fixed flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full relative border-2 border-gray-300">
+      <!-- Cart header -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
+      <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
+      <div class="flex justify-between items-center">
+        <!-- Cart actions or suggestions -->
+        <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get elements
+    const cartIcon = document.getElementById('cart-icon');
+    const popupMessage = document.getElementById('popup-message');
+    const closePopup = document.getElementById('close-popup');
+
+    // Open the pop-up when the cart icon is clicked
+    cartIcon.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevent the default redirect action
+      popupMessage.style.display = 'flex';  // Show the pop-up
+    });
+
+    // Close the pop-up when the close button is clicked
+    closePopup.addEventListener('click', function() {
+      popupMessage.style.display = 'none';  // Hide the pop-up
+    });
+  </script>
+
 
   <!-- Login Button -->
   <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">

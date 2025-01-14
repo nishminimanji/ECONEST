@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - Home Appliances</title>
+  <title>EcoNest - Christmas Sale</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
@@ -42,6 +42,43 @@
     .category:hover .subcategory {
       display: block;
     }
+    @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation-duration: 0.5s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+#popup-message {
+      display: none;
+      top: 20px;
+      right: 20px;
+    
+    }
+
   </style>
 </head>
 <body class="bg-gray-100">
@@ -156,8 +193,9 @@
     </span>
   </div>
 
-  <!-- Cart Icon with Redirection -->
-  <a href="../view/cart.php" class="relative flex items-center space-x-1">
+ 
+   <!-- Cart Icon with Pop-Up Message -->
+   <a href="#" id="cart-icon" class="relative flex items-center space-x-1 cursor-pointer mt-5 ml-5">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -165,6 +203,37 @@
     <span class="text-sm bg-yellow-500 text-green-700 font-bold rounded-full px-2">0</span>
     <span class="text-white">Cart</span>
   </a>
+
+  <!-- Pop-Up Modal positioned at top-right -->
+  <div id="popup-message" class="fixed flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full relative border-2 border-gray-300">
+      <!-- Cart header -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
+      <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
+      <div class="flex justify-between items-center">
+        <!-- Cart actions or suggestions -->
+        <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get elements
+    const cartIcon = document.getElementById('cart-icon');
+    const popupMessage = document.getElementById('popup-message');
+    const closePopup = document.getElementById('close-popup');
+
+    // Open the pop-up when the cart icon is clicked
+    cartIcon.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevent the default redirect action
+      popupMessage.style.display = 'flex';  // Show the pop-up
+    });
+
+    // Close the pop-up when the close button is clicked
+    closePopup.addEventListener('click', function() {
+      popupMessage.style.display = 'none';  // Hide the pop-up
+    });
+  </script>
 
   <!-- Login Button -->
   <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
@@ -176,173 +245,99 @@
   <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
  </div>
   </header>
-
+ 
   <section class="bg-gray-50 py-16">
   <!-- Hero Section -->
   <div class="container mx-auto px-6 text-center mb-12">
-    <h1 class="text-4xl font-bold text-gray-800 mb-4">Mid-Year Sale is Here!</h1>
-    <p class="text-xl text-gray-600">Exclusive offers, big discounts, and exciting deals on home appliances. Hurry, the sale won't last long!</p>
-    <a href="#shop-now" class="mt-6 inline-block bg-blue-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Shop Now</a>
+    <h1 class="text-4xl font-bold text-gray-800 mb-4" id="sale-title">Christmas Sale is Here!</h1>
+    <p class="text-xl text-gray-600" id="sale-description">Exclusive offers, huge discounts, and exciting deals on home appliances. Don't miss out—shop now!</p>
+    <a href="#shop-now" class="mt-6 inline-block bg-green-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">Shop Now</a>
   </div>
 
-  <!-- Sale Banner -->
-  <div class="bg-blue-600 text-white py-8 text-center">
-    <h2 class="text-3xl font-bold mb-2">Up to 50% OFF on Selected Products!</h2>
-    <p class="text-lg">Grab the best deals of the year before they're gone!</p>
+  <!-- Sale Banner with Background Image -->
+  <div class="bg-cover bg-center py-20 text-center" style="background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/12/07/Christmas-Green-Banner-Background-Graphics-85936494-1.jpg');" id="sale-banner">
+    <h2 class="text-3xl font-bold mb-2 text-red-600 drop-shadow-md" id="sale-banner-title">
+      Up to 50% OFF on Selected Products!
+    </h2>
+    <p class="text-lg text-white drop-shadow-sm" id="sale-banner-description">
+      Shop the best deals this Christmas—before they're gone!
+    </p>
   </div>
 
   <!-- Products Section -->
   <div class="container mx-auto px-6 mt-12">
     <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Featured Products</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="shop-now">
+
       <!-- Product Card 1 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-        <img src="path-to-image.jpg" alt="Product Image" class="w-full h-64 object-cover">
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn">
+        <img src="https://th.bing.com/th/id/OIP.0wBsXNBp5k3vRB-tCSqOngHaEo?w=800&h=500&rs=1&pid=ImgDetMain" alt="Smart TV" class="w-full h-64 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-          <p class="text-gray-600 text-sm mb-4">Short description of the product to highlight its features.</p>
+          <h3 class="text-xl font-semibold text-white">Smart TV</h3>
+          <p class="text-gray-200 text-sm mb-4">55-inch 4K Smart TV with Dolby Vision and sleek design.</p>
           <div class="flex justify-between items-center">
             <div>
-              <span class="text-xl font-semibold text-gray-900">₹ 12,499</span>
-              <span class="text-sm text-gray-500 line-through">₹ 15,000</span>
+              <span class="text-xl font-semibold">Rs.40,000</span>
+              <span class="text-sm text-gray-300 line-through">Rs.52,000</span>
+              </div>
+              <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
             </div>
-            <div class="flex items-center space-x-2">
-              <button class="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-600 transition duration-300">Add to Cart</button>
-              <button class="text-gray-600 hover:text-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path d="M17 7l3 3m0 0l-3 3m3-3H3"></path>
-                </svg>
-              </button>
+        </div>
+      </div>
+      
+                  
+
+      <!-- Product Card 2 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-200">
+        <img src="https://img.etsystatic.com/il/c9787f/739939842/il_570xN.739939842_98vi.jpg?version=0" alt="Bed" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white">Luxury Bed</h3>
+          <p class="text-gray-200 text-sm mb-4">Experience ultimate comfort and style with this king-size bed</p>
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="text-xl font-semibold">Rs.90,899</span>
+              <span class="text-sm text-gray-300 line-through">Rs.117,999</span>
             </div>
-          </div>
-          <div class="mt-4 flex justify-between items-center text-sm text-gray-500">
-            <span>5 Sub-services</span>
-            <span>Price: ₹ 12,499</span>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
           </div>
         </div>
       </div>
-      <!-- Product Card 2 (repeat structure) -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-        <img src="path-to-image.jpg" alt="Product Image" class="w-full h-64 object-cover">
+
+      <!-- Product Card 3 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-400">
+        <img src="https://th.bing.com/th/id/R.b7ff7da70e397c601ab5d42094b21130?rik=p6HaWfP7kLyTUQ&pid=ImgRaw&r=0" alt="Washing Machine" class="w-full h-64 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-          <p class="text-gray-600 text-sm mb-4">Short description of the product to highlight its features.</p>
+          <h3 class="text-xl font-semibold text-white">Washing Machine</h3>
+          <p class="text-gray-200 text-sm mb-4">8kg front-load washing machine with energy-efficient features.</p>
           <div class="flex justify-between items-center">
             <div>
-              <span class="text-xl font-semibold text-gray-900">₹ 9,999</span>
-              <span class="text-sm text-gray-500 line-through">₹ 12,000</span>
+              <span class="text-xl font-semibold">Rs.40,499</span>
+              <span class="text-sm text-gray-300 line-through">Rs.42,000</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <button class="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-600 transition duration-300">Add to Cart</button>
-              <button class="text-gray-600 hover:text-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path d="M17 7l3 3m0 0l-3 3m3-3H3"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="mt-4 flex justify-between items-center text-sm text-gray-500">
-            <span>4 Sub-services</span>
-            <span>Price: ₹ 9,999</span>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
           </div>
         </div>
       </div>
-      <!-- Product Card 3 (repeat structure) -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-        <img src="path-to-image.jpg" alt="Product Image" class="w-full h-64 object-cover">
+
+      <!-- Product Card 4 -->
+      <div class="product-card bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 opacity-0 animate-fadeIn delay-600">
+        <img src="https://th.bing.com/th/id/OIP.g_0glyvoMOinuRPWnhYXHAHaE8?w=1920&h=1280&rs=1&pid=ImgDetMain" alt="Sofa Set" class="w-full h-64 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-          <p class="text-gray-600 text-sm mb-4">Short description of the product to highlight its features.</p>
+          <h3 class="text-xl font-semibold text-white">Sofa Set</h3>
+          <p class="text-gray-200 text-sm mb-4">5-seater sofa set with plush cushions and a modern design.</p>
           <div class="flex justify-between items-center">
             <div>
-              <span class="text-xl font-semibold text-gray-900">₹ 8,499</span>
-              <span class="text-sm text-gray-500 line-through">₹ 10,000</span>
+              <span class="text-xl font-semibold">Rs.215,549</span>
+              <span class="text-sm text-gray-300 line-through">Rs.229,000</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <button class="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-600 transition duration-300">Add to Cart</button>
-              <button class="text-gray-600 hover:text-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path d="M17 7l3 3m0 0l-3 3m3-3H3"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="mt-4 flex justify-between items-center text-sm text-gray-500">
-            <span>6 Sub-services</span>
-            <span>Price: ₹ 8,499</span>
+            <button class="bg-red-600 text-white py-1 px-3 rounded-full text-sm hover:bg-red-700 transition duration-300">Add to Cart</button>
           </div>
         </div>
       </div>
-      <!-- Product Card 4 (repeat structure) -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-        <img src="path-to-image.jpg" alt="Product Image" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Product Name</h3>
-          <p class="text-gray-600 text-sm mb-4">Short description of the product to highlight its features.</p>
-          <div class="flex justify-between items-center">
-            <div>
-              <span class="text-xl font-semibold text-gray-900">₹ 15,999</span>
-              <span class="text-sm text-gray-500 line-through">₹ 18,000</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <button class="bg-blue-500 text-white py-1 px-3 rounded-full text-sm hover:bg-blue-600 transition duration-300">Add to Cart</button>
-              <button class="text-gray-600 hover:text-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path d="M17 7l3 3m0 0l-3 3m3-3H3"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="mt-4 flex justify-between items-center text-sm text-gray-500">
-            <span>7 Sub-services</span>
-            <span>Price: ₹ 15,999</span>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

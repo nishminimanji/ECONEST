@@ -1,9 +1,41 @@
+<?php
+session_start();
+
+// Placeholder credentials, replace with your database logic
+$valid_username = 'nishmi';
+$valid_password = 'n123';
+$admin_username = 'amal'; // Admin username
+$admin_password = 'a123'; // Admin password
+
+// Check if form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Check if the credentials match the admin
+    if ($username === $admin_username && $password === $admin_password) {
+        // Store user session and redirect to admin dashboard
+        $_SESSION['username'] = $username;
+        header("Location: ../view/admindashboard.php"); // Redirect to admin dashboard
+        exit();
+    } elseif ($username === $valid_username && $password === $valid_password) {
+        // Store user session and redirect to homepage
+        $_SESSION['username'] = $username;
+        header("Location: ../index.php"); // Redirect to homepage
+        exit();
+    } else {
+        $error_message = "Invalid username or password!";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoNest - Home Appliances</title>
+  <title>EcoNest - Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
   <style>
@@ -42,20 +74,25 @@
     .category:hover .subcategory {
       display: block;
     }
+    #popup-message {
+      display: none;
+      top: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 <body class="bg-gray-100">
 
   <!-- Navigation Bar -->
   <header class="bg-green-700 shadow">
-    <div class="container mx-auto flex justify-between items-center py-2 px-4 text-white">
+    <div class="container mx-auto flex flex-wrap justify-between items-center py-2 px-4 text-white">
       <!-- Logo Section - Move it to the left -->
       <a href="/" class="flex items-center space-x-6">
         <img src="../images/logo1.png" alt="EcoNest Logo" class="h-24 w-auto">
       </a>
 
       <!-- Main Categories Dropdown -->
-      <div class="dropdown relative ml-8"> <!-- ml-8 added to create space between logo and dropdown -->
+      <div class="dropdown relative ml-8 flex-shrink-0"> 
         <button class="text-white px-4 py-2 flex items-center space-x-2">
           <span>Products</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -122,11 +159,11 @@
               <span>Home Appliances </span>
             </a>
             <div class="subcategory">
-              <a href="../view/sofa.php">Sofa  Sets</a>
+              <a href="../view/sofa.php">Sofa Sets</a>
               <a href="../view/tv.php">Televisions</a>
               <a href="../view/sidetable.php">Side Tables</a>
               <a href="../view/fan.php">Fans</a>
-              <a href="../view/iron.php">Dry Irons & Stream Irons</a>
+              <a href="../view/iron.php">Dry Irons & Steam Irons</a>
               <a href="../view/refrigerator.php">Refrigerators</a>
             </div>
           </div>
@@ -134,30 +171,33 @@
       </div>
 
       <!-- Navigation Links -->
-      <nav class="space-x-4 flex items-center">
+      <nav class="space-x-4 flex flex-wrap items-center mt-2 md:mt-0">
         <a href="../index.php" class="hover:text-yellow-300">Home</a>
         <a href="../view/about.php" class="hover:text-yellow-300">About Us</a>
         <a href="../view/brands.php" class="hover:text-yellow-300">Brands</a>
         <a href="../view/services.php" class="hover:text-yellow-300">Services</a>
         <a href="../view/contactus.php" class="hover:text-yellow-300">Contact Us</a>
       </nav>
-      <div class="flex items-center space-x-4 ml-auto">
-  <!-- Search Bar -->
-  <div class="relative">
-    <input
-      type="text"
-      placeholder="Search for products"
-      class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none"
-    />
-    <span class="absolute top-2.5 right-3 text-gray-500">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
-      </svg>
-    </span>
-  </div>
+      
+      <!-- Right Section (Search Bar, Cart Icon, Login & Sign Up Buttons) -->
+      <div class="flex flex-wrap items-center space-x-4 ml-auto mt-2 md:mt-0">
+        <!-- Search Bar -->
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search for products"
+            class="px-4 py-2 rounded-lg text-gray-700 w-64 bg-white focus:outline-none"
+          />
+          <span class="absolute top-2.5 right-3 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5a7 7 0 110 14 7 7 0 010-14zm10 10l-4-4" />
+            </svg>
+          </span>
+        </div>
 
-  <!-- Cart Icon with Redirection -->
-  <a href="../view/cart.php" class="relative flex items-center space-x-1">
+        
+   <!-- Cart Icon with Pop-Up Message -->
+   <a href="#" id="cart-icon" class="relative flex items-center space-x-1 cursor-pointer mt-5 ml-5">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.879 6.621A4 4 0 0010 14h7a4 4 0 003.935-3.131L21 7H6" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 19a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -166,56 +206,96 @@
     <span class="text-white">Cart</span>
   </a>
 
-  <!-- Login Button -->
-  <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
-    <img src="https://buyabans.com/themes/buyabans/assets/images/latest-icon/account-icon.png" alt="Profile Icon" class="h-5 w-5 mr-2">
-    <span>Login</span>
-  </a>
-
-  <!-- Sign Up Button -->
-  <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
- </div>
-  </header>
-
-  <div class="relative min-h-screen">
-  <!-- Background Image Container with Blur -->
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://i.pinimg.com/736x/22/3d/e2/223de2862d6d648b01f3fb858a5ac2d6.jpg'); filter: blur(5px); background-size: cover;">
-  </div>
-
-  <!-- Centered Login Form -->
-  <div class="flex items-center justify-end min-h-screen relative z-10 px-40">
-    <div class="w-3/4 max-w-lg bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
-      <h2 class="text-4xl font-bold text-center text-green-600 mb-8">Login to EcoNest</h2>
-      
-      <!-- Login Form -->
-      <form action="#" method="POST" class="space-y-6">
-        <!-- Username Field -->
-        <div>
-          <label for="username" class="block text-lg font-medium text-gray-800">Username</label>
-          <input type="text" id="username" name="username" class="mt-2 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your username" required>
-        </div>
-
-        <!-- Password Field -->
-        <div>
-          <label for="password" class="block text-lg font-medium text-gray-800">Password</label>
-          <input type="password" id="password" name="password" class="mt-2 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your password" required>
-        </div>
-
-        <!-- Login Button -->
-        <div>
-          <button type="submit" class="w-full bg-green-500 text-white font-semibold py-4 rounded-lg shadow-md hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
-            Login
-          </button>
-        </div>
-      </form>
-
-      <!-- Forgot Password Link -->
-      <div class="mt-6 text-center">
-        <a href="#" class="text-lg text-green-600 hover:underline">Forgot password?</a>
+  <!-- Pop-Up Modal positioned at top-right -->
+  <div id="popup-message" class="fixed flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm w-full relative border-2 border-gray-300">
+      <!-- Cart header -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h3>
+      <p class="text-gray-600 mb-4">You haven't added any products to your cart yet.</p>
+      <div class="flex justify-between items-center">
+        <!-- Cart actions or suggestions -->
+        <button id="close-popup" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 focus:outline-none w-full md:w-auto text-center">Close</button>
       </div>
     </div>
   </div>
-</div>
+
+  <script>
+    // Get elements
+    const cartIcon = document.getElementById('cart-icon');
+    const popupMessage = document.getElementById('popup-message');
+    const closePopup = document.getElementById('close-popup');
+
+    // Open the pop-up when the cart icon is clicked
+    cartIcon.addEventListener('click', function(event) {
+      event.preventDefault();  // Prevent the default redirect action
+      popupMessage.style.display = 'flex';  // Show the pop-up
+    });
+
+    // Close the pop-up when the close button is clicked
+    closePopup.addEventListener('click', function() {
+      popupMessage.style.display = 'none';  // Hide the pop-up
+    });
+  </script>
+
+        <!-- Login Button -->
+        <a href="../view/login.php" class="flex items-center bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-400">
+          <img src="https://buyabans.com/themes/buyabans/assets/images/latest-icon/account-icon.png" alt="Profile Icon" class="h-5 w-5 mr-2">
+          <span>Login</span>
+        </a>
+
+        <!-- Sign Up Button -->
+        <a href="../view/signup.php" class="bg-white text-green-700 px-4 py-2 rounded-lg hover:bg-gray-100">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="relative min-h-screen">
+    <!-- Background Image Container with Blur -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://i.pinimg.com/736x/22/3d/e2/223de2862d6d648b01f3fb858a5ac2d6.jpg'); filter: blur(5px); background-size: cover;">
+    </div>
+
+    <!-- Centered Login Form -->
+    <div class="flex items-center justify-end min-h-screen relative z-10 px-40">
+      <div class="w-3/4 max-w-lg bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-center text-green-600 mb-8">Login to EcoNest</h2>
+
+        <!-- Display Error Message -->
+        <?php if (isset($error_message)) : ?>
+          <div class="text-red-500 text-center mb-4">
+            <?php echo $error_message; ?>
+          </div>
+        <?php endif; ?>
+
+        <!-- Login Form -->
+        <form action="" method="POST" class="space-y-6">
+          <!-- Username Field -->
+          <div>
+            <label for="username" class="block text-lg font-medium text-gray-800">Username</label>
+            <input type="text" id="username" name="username" class="mt-2 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your username" required>
+          </div>
+
+          <!-- Password Field -->
+          <div>
+            <label for="password" class="block text-lg font-medium text-gray-800">Password</label>
+            <input type="password" id="password" name="password" class="mt-2 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your password" required>
+          </div>
+
+          <!-- Login Button -->
+          <div>
+            <button type="submit" class="w-full bg-green-500 text-white font-semibold py-4 rounded-lg shadow-md hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+              Login
+            </button>
+          </div>
+        </form>
+
+        <!-- Forgot Password Link -->
+        <div class="mt-6 text-center">
+          <a href="#" class="text-lg text-green-600 hover:underline">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 <footer class="bg-green-900 text-white py-0">
